@@ -46,8 +46,6 @@ Rails.application.routes.draw do
   ##outros
   get 'outros/uploaddearquivos'
   post 'outros/uploaddearquivos'
-  get 'outros/jqueryprogressbar'
-  get 'outros/loader'
   get 'outros/scroll'
 
   #auth
