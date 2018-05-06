@@ -1,0 +1,92 @@
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+  
+  <div class="col s9">
+
+      <div class="row">
+        <div class="col s12">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Textos", buscaelementos_textos_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col s6">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <%= image_tag("cucumber-logo.png", :alt => "rss feed") %>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>  Caros amigos, a contínua expansão de nossa atividade agrega valor ao estabelecimento das condições financeiras e administrativas exigidas. Evidentemente, a valorização de fatores subjetivos nos obriga à análise das condições inegavelmente apropriadas. Desta maneira, a constante divulgação das informações auxilia a preparação e a composição das posturas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <%= image_tag("cucumber-logo.png", :alt => "rss feed") %>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>O que temos que ter sempre em mente é que o acompanhamento das preferências de consumo exige a precisão e a definição do fluxo de informações. No entanto, não podemos esquecer que o novo modelo estrutural aqui preconizado garante a contribuição de um grupo importante na determinação das novas proposições.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col s6">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <%= image_tag("cucumber-logo.png", :alt => "rss feed") %>
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>A nível organizacional, a complexidade dos estudos efetuados cumpre um papel essencial na formulação do remanejamento dos quadros funcionais. O empenho em analisar a percepção das dificuldades possibilita uma melhor visão global dos índices pretendidos. Percebemos, cada vez mais, que a crescente influência da mídia aponta para a melhoria da gestão inovadora da qual fazemos parte. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <%= image_tag("cucumber-logo.png", :alt => "rss feed") %>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div class="card-content">
+                  <p>          No mundo atual, a hegemonia do ambiente político não pode mais se dissociar das regras de conduta normativas. No mundo atual, a contínua expansão de nossa atividade auxilia a preparação e a composição das formas de ação. A certificação de metodologias que nos auxiliam a lidar com a valorização de fatores subjetivos nos obriga à análise dos conhecimentos estratégicos para atingir a excelência.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+</div>

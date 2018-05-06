@@ -1,0 +1,26 @@
+@import 'materialize';
+@import 'material_icons';
+
+
+//css auxiliares
+.fixarRodape {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.tamanhodiv {
+    height: 10px;
+}
+
+.tamanhodiv2 {
+    height: 60px;
+}
+
+.breadcrumb:before {
+    color: #0d0e0d;
+}

@@ -1,0 +1,57 @@
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+
+      <div class="row">
+        <div class="col s12">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Accordion", widgets_accordion_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        </div>
+      </div>
+
+
+
+  <div class="row">
+     <div class="tamanhodiv2">
+     <h5 class="center">Accordion!!</h5>
+     </div>
+  </div>
+
+
+<div class="row">
+
+   <div class="center">
+       <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Primeiro Texto.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Segundo Texto.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Terceiro Texto.</span></div>
+    </li>
+  </ul>
+  </div>
+     <%= button_to "Voltar", buscaelementos_links_path, :method => "get", class:  "btn waves-effect waves-light red"%>
+   </div>
+</div>
+
+
+</div>

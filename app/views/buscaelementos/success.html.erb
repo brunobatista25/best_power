@@ -1,0 +1,42 @@
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+      <div class="row">
+        <div class="col s12">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Success", buscaelementos_success_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        </div>
+      </div>
+
+
+
+  <div class="row">
+     <div class="tamanhodiv2">
+     <h5 class="red-text text-darken-1 center">Success!!</h5>
+     </div>
+  </div>
+
+
+<div class="row">
+
+   <div class="center">
+     <%= image_tag("deadpool.png",class: "center")%>
+     <%= button_to "Voltar", buscaelementos_links_path, :method => "get", class:  "btn waves-effect waves-light red"%>
+   </div>
+</div>
+
+  </div>
+</div>

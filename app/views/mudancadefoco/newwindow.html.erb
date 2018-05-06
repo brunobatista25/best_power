@@ -1,0 +1,37 @@
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+  <div class="col s9">
+
+      <div class="row">
+        <div class="col s12">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+         <%= link_to "Janela", mudancadefoco_janela_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Nova Janela", mudancadefoco_newwindow_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        </div>
+      </div>
+
+
+
+  <div class="row">
+     <div class="tamanhodiv2">
+     <h5 class="red-text text-darken-1 center">Você Abriu uma nova janela!!</h5>
+     </div>
+  </div>
+
+
+<div class="row">
+
+   <div class="center">
+     <%= image_tag("deadpool.png",class: "center")%>
+     <%= button_to "Voltar", treinamento_home_path, :method => "get", class:  "btn waves-effect waves-light red"%>
+   </div>
+</div>
+</div>

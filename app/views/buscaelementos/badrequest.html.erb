@@ -1,0 +1,37 @@
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+      <div class="row">
+        <div class="col s12">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Bad Request", buscaelementos_badrequest_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="tamanhodiv"></div>
+      <h5 class="red-text text-darken-1 center">Bad Request!!</h5>
+    </div>
+  
+    <div class="row">
+       <div class="center">
+         <%= image_tag("spider.jpg",class: "center")%>
+         <%= button_to "Voltar", buscaelementos_links_path, :method => "get", class:  "btn waves-effect waves-light red"%>
+       </div>
+    </div>
+
+  </div>
+</div>
