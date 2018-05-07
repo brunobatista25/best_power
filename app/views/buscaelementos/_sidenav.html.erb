@@ -5,8 +5,8 @@
      <li class="bold"><a class="collapsible-header ">Formulário</a>
        <div class="collapsible-body">
          <ul>
-           <li><a href="tanos.html">Criar Usuários</a></li>
-           <li><a href="color.html">Lista de Usuários</a></li>
+           <li><%= link_to "Criar Usuários", new_user_path, :method => "get"%></li>
+           <li><%= link_to "Lista de Usuários", users_path, :method => "get"%></li>
          </ul>
        </div>
      </li>

@@ -133,12 +133,22 @@ $(document).ready(function(){
   $('.modal').modal();
 });
 
+$(document).ready(function(){
+  $('.slider').slider();
+});
+     
 
 
 
+$(document).ready(function(){
+  $('.tap-target').tapTarget();
+});
 
 
-
+$(document).ready(function(){
+  $('.carousel').carousel();
+});
+    
 
 
 

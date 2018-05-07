@@ -1,3 +1,4 @@
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
@@ -13,12 +14,11 @@
 
   <div class="col s9">
 
-
       <div class="row">
         <div class="col s12">
         <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
         <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
-        <%= link_to "Autocomplete", widgets_autocomplete_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Novo Usuário", new_user_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
         </div>
       </div>
 
@@ -26,38 +26,17 @@
 
   <div class="row">
      <div class="tamanhodiv2">
-     <h5 class="red-text text-darken-1 center">Autocomplete!!</h5>
+     <h5 class="center">Novo Usuário!!</h5>
      </div>
   </div>
 
 
 <div class="row">
-
-   <div class="center">
-  <div class="row">
-  <h5>Escolha seu Estado!</h5>
-    <div class="col s12">
-      <div class="row">
-      <div class="col s3"></div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix"></i>
-          <input type="text" id="autocomplete-input" class="autocomplete">
-          <label for="autocomplete-input">Autocomplete</label>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="row center">
-  </div>
-     <%= button_to "Voltar", buscaelementos_links_path, :method => "get", class:  "btn waves-effect waves-light red"%>
-   </div>
-   </div>
-   </div>
-
-   
+<div class="col s2"></div>
+ <div class="col s8 center">
+<%= render 'form' %>
 </div>
-
-
+</div>
 
   </div>
 </div>
