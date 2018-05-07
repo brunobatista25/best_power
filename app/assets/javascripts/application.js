@@ -233,3 +233,8 @@ $('p.activator').mouseover(function(e){
 
 $('.tooltip').tooltip('methodName');
 $('.tooltip').tooltip('methodName', paramName);
+
+
+$(document).ready(function() {
+  $('character-counter').characterCounter('destroy');
+});
