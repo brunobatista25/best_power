@@ -40,12 +40,11 @@
             
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    
                     <%= image_tag("juger.jpg",class: "center")%>
                 </div>
                 <div class="card-content">
                     <span class="card-title">
-                      <p class="activator">Coloque o mouse aqui</p>
+                      <p class="activator">Passe o mouse aqui</p>
                     </span>
                 </div>
                 <div class="card-reveal">
@@ -54,9 +53,6 @@
                           <div>Parábens</div> 
                         </span>
                     <p>Você usou o mouse hover!</p>
-                    <div>
-                        <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
-                    </div>
                 </div>
             </div>
         </div>
@@ -65,10 +61,6 @@
    
 </div>
 
-<br></br>
-<br></br>
-<br></br>
-<br></br>
     <div class="row">
    <div class="center">
     <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
