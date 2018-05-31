@@ -76,9 +76,31 @@
 <div class="row">
   <div class="col s12 center"> 
      <div class="actions btn waves-effect green">
-       <%= f.submit "Criar"%>
+       <%= f.submit "Criar", id: "botaoSalvar"%>
      </div>
-     <%= link_to 'Voltar', treinamento_home_path , class: "btn waves-effect waves-light red"%>
+     <%= button_to 'Voltar', treinamento_home_path , class: "btn waves-effect waves-light red"%>
   </div>
 </div>
 <% end %>
+
+<script>
+$(document).ready(function() {
+ 
+    var botaoSalvar = $( "#botaoSalvar" );
+ 
+    botaoSalvar.click(function() {
+         
+        botaoSalvar.html('Aguarde...');
+        botaoSalvar.prop('disabled', true);
+ 
+        $.get( "post" ).done(function(resultado) {
+ 
+            $("#resultadoSorteio").html(resultado);
+ 
+            botaoSalvar.html('Sortear NÃºmero');
+            botaoSalvar.prop('disabled', false);
+ 
+        });
+    });
+});
+</script>
