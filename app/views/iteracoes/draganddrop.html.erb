@@ -1,27 +1,22 @@
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Also include jQueryUI -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-<style>
-.columns {
-  width: 400px;
-}
-.column {
-  height: 150px;
-  width: 150px;
-  float: left;
-  border: 2px solid #666666;
-  background-color: #ccc;
-  margin-right: 5px;
-  text-align: center;
-  cursor: move;
-}
-.column.over {
-  border: 2px dashed #000;
-}
+<style>    
+  #dropzone {
+      top: 150px;
+      width: 200px;
+      height: 200px;
+      background: cyan;
+      border: solid 1px;
+  }
 </style>
+
 <%= render "navbar"%>
 <div class="row">
 
@@ -31,112 +26,70 @@
 
   <div class="col s9">
 
-
-      <div class="row">
-        <div class="col s12">
-        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
-        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
-        <%= link_to "Drag and Drop", iteracoes_draganddrop_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
-        </div>
+    <div class="row">
+      <div class="col s12">
+      <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+      <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      <%= link_to "Drag and Drop", iteracoes_draganddrop_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
       </div>
+    </div>
 
 
-
-  <div class="row">
-     <div class="tamanhodiv2">
-     <h5 class="red-text text-darken-1 center">Drag and Drop!!</h5>
-     </div>
-  </div>
 
     <div class="row">
-     <div class="tamanhodiv2">
-     <h5 class="red-text text-darken-1 center">Arraste de um quadrado para o outro!!</h5>
-     </div>
-  </div>
-
-
-  <div class="col s4"></div>
-
-  <div class="col s8">
-    <div id="columns">
-      <div class="column" id="column-a" draggable="true"><header>A</header></div>
-      <div class="column" id="column-b" draggable="true"><header>B</header></div>
+       <div class="tamanhodiv2">
+       <h5 class="red-text text-darken-1 center">Drag and Drop!!</h5>
+       </div>
     </div>
+
+    <div class="row">
+      <div class="tamanhodiv2">
+        <h5 class="red-text text-darken-1 center">Arraste carinha para dento do quadrado!!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2"></div>
+
+      <div class="col s4 center">
+        <%= image_tag("Winston.png", id: "winston")%>
+      </div>
+    <div class="col s4">
+
+    <div id="dropzone"></div>
+
   </div>
+
+
+</div>
+
+
+
+
+
 
   <div> 
     <div class="row">
-   <div class="center">
-    <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
-   </div>
-   </div>
-    
-
+      <div class="center">
+        <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
+      </div>
+    </div>
+  </div>
+  
 </div>
-
-
-
-
-</div>
-
 
 <script>
-var dragSrcEl = null;
-
-function handleDragStart(e) {
-  this.style.opacity = '0.4';
-
-  dragSrcEl = this;
-
-  e.dataTransfer.effectAllowed = 'move';
-  e.dataTransfer.setData('text/html', this.innerHTML);
-}
-
-function handleDragOver(e) {
-  if (e.preventDefault) {
-    e.preventDefault();
-  }
-
-  e.dataTransfer.dropEffect = 'move';
-
-  return false;
-}
-
-function handleDragEnter(e) {
-  this.classList.add('over');
-}
-
-function handleDragLeave(e) {
-  this.classList.remove('over');
-}
-
-function handleDrop(e) {
-  if (e.stopPropagation) {
-    e.stopPropagation();
-  }
-
-  if (dragSrcEl != this) {
-    dragSrcEl.innerHTML = this.innerHTML;
-    this.innerHTML = e.dataTransfer.getData('text/html');
-  }
-
-  return false;
-}
-
-function handleDragEnd(e) {
-  [].forEach.call(cols, function (col) {
-    col.classList.remove('over');
-  });
-  this.style.opacity = '1';
-}
-
-var cols = document.querySelectorAll('#columns .column');
-[].forEach.call(cols, function(col) {
-  col.addEventListener('dragstart', handleDragStart, false);
-  col.addEventListener('dragenter', handleDragEnter, false);
-  col.addEventListener('dragover', handleDragOver, false);
-  col.addEventListener('dragleave', handleDragLeave, false);
-  col.addEventListener('drop', handleDrop, false);
-  col.addEventListener('dragend', handleDragEnd, false);
-});
+    $("#winston").draggable();
+    $("#dropzone").droppable({
+        drop: function(event, ui) {
+            $(this).css('background', 'rgb(0,200,0)');
+        },
+        over: function(event, ui) {
+            $(this).css('background', 'orange');
+        },
+        out: function(event, ui) {
+            $(this).css('background', 'cyan');
+        }
+    });
 </script>
+
