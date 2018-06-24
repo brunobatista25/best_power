@@ -10,88 +10,71 @@
 
   <div class="col s9">
 
-      <div class="row">
-        <div class="col s12" style="margin-top: 20px;">
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
         <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
         <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
         <%= link_to "Lista de Usuários", users_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tamanhodiv2">
+        <h5 class="center">Lista de Usuários!!</h5>
+      </div>
+    </div>
+
+
+    <div class="row">
+    
+      <div class="row">
+        <div class="center">
+        <%= link_to 'Novo Usuário', new_user_path , class: "btn waves-light green"%>
         </div>
       </div>
 
+      <div class="col s12 center">
+       <p id="notice"><%= notice %></p>
 
+        <table class="centered highlight">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Último Nome</th>
+              <th>Email</th>
+              <th>Universidade</th>
+              <th>Sexo</th>
+              <th>Profissão</th>
+              <th>Idade</th>
+              <th>Endereço</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <td><%= user.name %></td>
+                <td><%= user.lastname %></td>
+                <td><%= user.email %></td>
+                <td><%= user.university %></td>
+                <td><%= user.gender %></td>
+                <td><%= user.profile %></td>
+                <td><%= user.age %></td>
+                <td><%= user.address %></td>
+                <td><%= link_to 'Mostrar', user %></td>
+                <td><%= link_to 'Editar', edit_user_path(user) %></td>
+                <td><%= link_to 'Deletar', user, method: :delete, data: { confirm: 'Vocee está certo disso?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
 
-  <div class="row">
-     <div class="tamanhodiv2">
-     <h5 class="center">Lista de Usuários!!</h5>
-     </div>
-  </div>
-
-
-<div class="row">
-
-<div class="row">
-<div class="center">
-<%= link_to 'Novo Usuário', new_user_path , class: "btn waves-light green"%>
-</div>
-</div>
- <div class="col s12 center">
-
-
-
-<p id="notice"><%= notice %></p>
-
-
-<table class="centered highlight">
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Último Nome</th>
-      <th>Email</th>
-      <th>Universidade</th>
-      <th>Sexo</th>
-      <th>Profissão</th>
-      <th>Idade</th>
-      <th>Endereço</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.lastname %></td>
-        <td><%= user.email %></td>
-        <td><%= user.university %></td>
-        <td><%= user.gender %></td>
-        <td><%= user.profile %></td>
-        <td><%= user.age %></td>
-        <td><%= user.address %></td>
-        <td><%= link_to 'Mostrar', user %></td>
-        <td><%= link_to 'Editar', edit_user_path(user) %></td>
-        <td><%= link_to 'Deletar', user, method: :delete, data: { confirm: 'Vocee está certo disso?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-
-
-
-
-
-
-</div>
-</div>
+        <br>
+      </div>
+      
+    </div>  
 
   </div>
+
 </div>
-
-
-
-
-
-
-

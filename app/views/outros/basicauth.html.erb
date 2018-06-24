@@ -1,5 +1,5 @@
 <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 <%= render "navbar"%>
 <div class="row">
@@ -10,46 +10,32 @@
 
   <div class="col s9">
 
-<div>
-<div id="response">
+    <div>
+      <div id="response"></div>
+      <input type="button" class="btn btn-primary" value="Call Web API" onclick="javascript:CallWebAPI();" />
+    </div>
 
+  </div>
+  
 </div>
-<input type="button" class="btn btn-primary" value="Call Web API" onclick="javascript:CallWebAPI();" />
 
-
-
-</div>
-
-
-  <script>
+<script>
   var userName = "admin";
-var passWord = "admin";
-
-function authenticateUser(user, password)
-{
+  var passWord = "admin";
+  
+  function authenticateUser(user, password)
+  {
     var token = user + ":" + password;
-
-    // Should i be encoding this value????? does it matter???
-    // Base64 Encoding -> btoa
     var hash = btoa(token); 
-
     return "Basic " + hash;
-}
-
-function CallWebAPI() {
-
-    // New XMLHTTPRequest
+  }
+  
+  function CallWebAPI() {
     var request = new XMLHttpRequest();
     request.open("get", "basicauth", false);
     request.setRequestHeader("Authorization", authenticateUser(userName, passWord));  
     request.send();
-    // view request status
     alert(request.status);
     response.innerHTML = request.responseText;
-}
-  
-  
-  </script>
-
-  </div>
-</div>
+  }
+</script>
