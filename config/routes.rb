@@ -22,11 +22,6 @@ Rails.application.routes.draw do
   get 'buscaelementos/badrequest'
   get 'buscaelementos/internalservererror'
  
-  #verificando elementos
-  get 'verificandoelementos/ajax'
-  get 'verificandoelementos/elementosvisiveis'
-  get 'verificandoelementos/elementosinvisiveis'
-
   #mudanca de foco
   get 'mudancadefoco/alert'
   get 'mudancadefoco/iframe'
@@ -41,7 +36,6 @@ Rails.application.routes.draw do
 #
   #iteracoes
   get 'iteracoes/draganddrop'
-  get 'iteracoes/slider'
   get 'iteracoes/mousehover'
 
   ##outros
@@ -51,6 +45,17 @@ Rails.application.routes.draw do
 
   #auth
   get 'basicauth/home'
+
+  #api
+  get 'api/get'
+  get 'api/post'
+  get 'api/put'
+  get 'api/delete'
+  get 'api/home_api'
+
+  #cursos
+
+  get 'cursos/home'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
