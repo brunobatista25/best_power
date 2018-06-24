@@ -125,10 +125,6 @@ $(document).ready(function(){
 });
      
 $(document).ready(function(){
-  $('.tap-target').tapTarget();
-});
-
-$(document).ready(function(){
   $('.carousel').carousel();
 });
     
@@ -187,26 +183,12 @@ $(document).ready(function(){
   $('.collapsible').collapsible();
 });
       
-var slider = document.getElementById('test5');
-noUiSlider.create(slider, {
- start: [20, 80],
- connect: true,
- step: 1,
- range: {
-   'min': 0,
-   'max': 100
- },
- format: wNumb({
-   decimals: 0
- })
-});
-
 $('p.activator').mouseover(function(e){
   $(this).trigger('click');
 });
 
-$('.tooltip').tooltip('methodName');
-$('.tooltip').tooltip('methodName', paramName);
+$('.tooltip').tooltip('methodName');// ver
+$('.tooltip').tooltip('methodName');// ver
 
 $(document).ready(function() {
   $('character-counter').characterCounter('destroy');

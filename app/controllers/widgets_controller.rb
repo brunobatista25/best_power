@@ -7,7 +7,4 @@ class WidgetsController < ApplicationController
 
     def datapicker
     end
-
-    def slider
-    end
 end
