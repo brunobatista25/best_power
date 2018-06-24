@@ -1,7 +1,7 @@
 class TreinamentoController < ApplicationController
-    def treinamento
-    end
+  def treinamento
+  end
     
-    def home
-    end
+  def home
+  end
 end
