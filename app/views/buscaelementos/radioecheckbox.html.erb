@@ -1,6 +1,5 @@
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.co/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 <%= render "navbar"%>
 <div class="row">
@@ -11,77 +10,75 @@
 
   <div class="col s9">
 
-      <div class="row">
-        <div class="col s12" style="margin-top: 20px;">
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
         <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
         <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
         <%= link_to "Radio e Checkbox", buscaelementos_radioecheckbox_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
-        </div>
       </div>
-
-      <div class="row">
-        <div class="col s6">
-        <h5>Radio Box</h5>
-        </div>
-
-        <div class="col s6">
-         <h5>CheckBox</h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s6">
-          <form>
-            <label>Tipo 1</label>
-            <p>
-                <input name="group1" type="radio" id="red"/>
-                <label for="red">Red</label>
-            </p>
-            <p>
-              <input name="group1" type="radio" id="blue"/>
-              <label for="blue">Blue</label>
-            </p>
-            
-            <label>Tipo 2</label>
-            <p>
-                <input class="with-gap" type="radio" id="yellow" name="group2"/>
-                <label for="yellow">Yellow</label>
-            </p>
-            <p>
-                <input class="with-gap" name="group2" type="radio" id="green"/>
-                <label for="green">Green</label>
-            </p>
-          </form>
-        </div>
-
-        <div class="col s6">
-          <label>Tipo 1</label>
-          <p>
-            <input type="checkbox" id="purple" name="group3"/>
-            <label for="purple">purple</span>
-          </p>
-          <p>
-            <input type="checkbox" id="grey" name="group3"/>
-            <label for="grey">Grey</span>
-          </p>
-          <label>Tipo 2</label>
-          <p>
-            <input type="checkbox"  class="filled-in" id="black" name="group4"/>
-            <label for="black">black</label>
-          </p>
-          <p>
-            <input type="checkbox"  class="filled-in" id="white" name="group4"/>
-            <label for="white">White</label>
-          </p>
-        <div>
-
-  </div>
-  
-</div>
+    </div>
 
     <div class="row">
-   <div class="center">
-    <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
-   </div>
-   </div>
-    
+      <div class="col s6">
+        <h5>Radio Box</h5>
+      </div>
+      <div class="col s6">
+        <h5>CheckBox</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6">
+        <form>
+          <label>Tipo 1</label>
+          <p>
+            <input name="group1" type="radio" id="red"/>
+            <label for="red">Red</label>
+          </p>
+          <p>
+            <input name="group1" type="radio" id="blue"/>
+            <label for="blue">Blue</label>
+          </p>
+          
+          <label>Tipo 2</label>
+          <p>
+            <input class="with-gap" type="radio" id="yellow" name="group2"/>
+            <label for="yellow">Yellow</label>
+          </p>
+          <p>
+            <input class="with-gap" name="group2" type="radio" id="green"/>
+            <label for="green">Green</label>
+          </p>
+        </form>
+      </div>
+
+      <div class="col s6">
+        <label>Tipo 1</label>
+        <p>
+          <input type="checkbox" id="purple" name="group3"/>
+          <label for="purple">purple</span>
+        </p>
+        <p>
+          <input type="checkbox" id="grey" name="group3"/>
+          <label for="grey">Grey</span>
+        </p>
+        <label>Tipo 2</label>
+        <p>
+          <input type="checkbox"  class="filled-in" id="black" name="group4"/>
+          <label for="black">black</label>
+        </p>
+        <p>
+          <input type="checkbox"  class="filled-in" id="white" name="group4"/>
+          <label for="white">White</label>
+        </p>
+      <div>
+    </div>
+  
+  </div>
+
+</div>
+    <div class="row center">
+      <div class="center">
+        <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
+      </div>
+    </div>
