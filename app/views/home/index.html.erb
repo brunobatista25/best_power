@@ -19,12 +19,8 @@
 
           <div class="section no-pad-bot" id="index-banner">
             <div class="container">
-               <!--<br><br>-->
               <div class="row center">
               <div class="col s12 "></div>
-              <div class="col s12 center">
-                <h4 class=" header col s12 orange-text">Automação Web</h4>
-              </div>
               </div>
               <div class="row center">
                 <h5 class="header col s12 light">Um site feito em materialize e rails com diversos tipos de funcionalidades para fazer automação.</h5>
@@ -32,7 +28,6 @@
               <div class="row center">
                  <%= link_to "Começar Automação Web", treinamento_home_path, :method => "get", class:"btn waves-light orange"%>
               </div>
-             <!-- <br><br> -->
             </div>
           </div>
 
@@ -63,35 +58,32 @@
  
       </div> -->
 
-      <footer class="page-footer blue darken-4 fixarRodape">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="left white-text">Bruno Batista</h5>
-              <p class="left grey-text text-lighten-4">Site foi criado para ajudar a comunidade de testes para treinar a automação.</p>
-            </div>
-            <div class="col l3 s12">
-              <h5 class=" left white-text"></h5>
-              <ul>
-                <li><%= link_to "Github", href="https://github.com/brunobatista25", :method => "get", class: "breadcrumb white-text text-darken-4"%></li>
-                <li><%= link_to "Medium", href="https://medium.com/@brunobatista101", class: "breadcrumb white-text text-darken-4"%></li>
-              </ul>
-            </div>
-            <div class="col l3 s12">
-              <h5 class=" left white-text"></h5>
-              <ul>
-                <li><%= link_to "Youtube", href="https://www.youtube.com/channel/UCp554v_is_ZzjzSmAQyFfAA", :method => "get", class: "breadcrumb white-text text-darken-4"%></li>
-                <li><%= link_to "Linkedin", href="https://www.linkedin.com/in/bruno-batista-87734464", class: "breadcrumb white-text text-darken-4"%></li>
-              </ul>
-            </div>
-          </div>
+  <footer class="page-footer blue darken-4 fixarRodape">
+    <div class="container">
+      <div class="row">
+        <div class="col l7 s12">
+          <h5 class="white-text">Bruno Batista</h5>
+          <p class="grey-text text-lighten-4">Site foi criado para ajudar a comunidade de testes para treinar a automação.</p>
         </div>
-        <div class="footer-copyright">
-          <div class="container">
-         Feito por: <a class="brown-text text-lighten-3" href="https://github.com/brunobatista25">Bruno Batista</a>
-          </div>
+        <div class="col l5 s12">
+          <h5 class="white-text">Redes Sociais</h5>
+          <ul class="icons-list">
+            <li><a href="https://www.youtube.com/channel/UCp554v_is_ZzjzSmAQyFfAA" title="Youtube"><span class="icons-list-item"><%= image_tag("youtube.png",class: "tipo")%></span></a></li>
+            <li><a href="https://medium.com/@brunobatista101" title="Medium"><span class="icons-list-item"><%= image_tag("medium.png",class: "tipo")%></span></a></li>
+            <li><a href="https://www.linkedin.com/in/bruno-batista-87734464" title="Linkedin"><span class="icons-list-item"><%= image_tag("linkedin.png",class: "tipo")%></span></a></li>
+            <li><a href="https://github.com/brunobatista25" title="Github"><span class="icons-list-item"><%= image_tag("Github.png",class: "tipo")%></span></a></li>
+            <li><a href="https://www.facebook.com/Brunobatistatestes/" title="Facebook"><span class="icons-list-item"><%= image_tag("facebook.png",class: "tipo")%></span></a></li>
+          </ul>
         </div>
-      </footer>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Bruno Batista
+        <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/bruno-batista-87734464" target="_blank">Desenvolvido por Bruno Batista</a>
+      </div>
+    </div>
+  </footer>
 
       <!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
 <script>

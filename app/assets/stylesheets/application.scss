@@ -5,8 +5,8 @@
 .fixarRodape {
     bottom: 0;
     position: fixed;
+    height: 40%;
     width: 100%;
-    text-align: center;
 }
 
 .tamanhodiv {
@@ -24,3 +24,24 @@
 .left {
     text-align: left;
 }
+
+
+.icons-list li{
+    display: inline;
+    margin: 0px;
+}
+
+.tipo{
+    height: 45px;
+    width: 45px;
+  }
+
+  .icons-list-item{
+    font-family: SocialIcons;
+    font-size: 64px;
+    color: white
+  }
+  
+  .icons-list-item:hover{
+    color: black;
+  }
