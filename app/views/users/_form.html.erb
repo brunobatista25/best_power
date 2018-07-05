@@ -13,13 +13,13 @@
   <div class="row">
     <div class="col s6"> 
       <div class="input-field">
-        <%= f.label :Nome %><br>
+        <%= f.label "Nome *"%><br>
         <%= f.text_field :name %>
       </div>
     </div>
     <div class="col s6"> 
       <div class="input-field">
-        <%= f.label "Último Nome" %><br>
+        <%= f.label "Último Nome *" %><br>
         <%= f.text_field :lastname %>
       </div>
     </div>
@@ -28,7 +28,7 @@
   <div class="row">
     <div class="col s6"> 
       <div class="input-field">
-        <%= f.label :Email %><br>
+        <%= f.label "Email *" %><br>
         <%= f.text_field :email %>
       </div>
     </div>
@@ -73,7 +73,7 @@
   <div class="row">
     <div class="col s12 center"> 
       <div class="actions btn waves-effect green">
-        <%= f.submit "Criar", data: { disable_with: 'Enviando' }%>
+        <%= f.submit "Criar", data: { disable_with: 'Enviando...' }%>
       </div>
       <%= link_to 'Voltar', treinamento_home_path , class: "btn waves-light red"%>
     </div>
