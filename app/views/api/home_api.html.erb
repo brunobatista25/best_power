@@ -1,0 +1,71 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+    <div class="row">
+      <div class="tamanhodivupl">
+        <h5 class="orange-text center ">Módulo de Automação de API do Batista.</h5>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="tamanhodiv1">
+        <h5 class="center ">Neste Site você irá aprender tudo sobre API para ficar fera em Automação de API.</h5>
+      </div>
+    </div>
+
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <%= image_tag("party.png",class: "center")%>  <!-- random image -->
+          <div class="caption left-align">
+            <h4 class="black-text">HttParty</h4>
+            <h5 class="black-text">Automatize Api com HttParty.</h5>
+          </div>
+        </li>
+        <li>
+          <%= image_tag("get.png",class: "center")%> <!-- random image -->
+          <div class="caption right-align">
+            <h5>Requisições GET.</h5>
+          </div>
+        </li>
+        <li>
+          <%= image_tag("post.png",class: "center")%> <!-- random image -->
+          <div class="caption right-align">
+            <h2>Requisições POST.</h2>
+          </div>
+        </li>
+        <li>
+          <%= image_tag("deadpool.png",class: "center")%> <!-- random image -->
+          <div class="caption center-align">
+            <h3>Entre outras Requisições!</h3>
+            <h5 class="light grey-text text-lighten-3">Até mais!</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

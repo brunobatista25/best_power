@@ -1,0 +1,318 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div> 
+  
+  <div class="col s9">
+    
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "O que é Api", api_o_que_e_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+    
+    <div class="center">
+      <%= link_to "Próximo", api_o_que_e_cliente_servidor_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+    <div class="post-wrapper-content">
+      <h3><strong>O que é API</strong></h3>
+		  <div class="section the_content has_content">
+      <div class="section_wrapper">
+      <div class="the_content_wrapper">
+      <p>
+        <span style="font-weight: 400;">A sigla </span>
+        <b>API</b><span style="font-weight: 400;"> corresponde às palavras em inglês &#8220;</span>
+        <b><i>Application Programming </i></b>
+        <b>Interface</b>
+        <span style="font-weight: 400;">&#8220;. No português &#8220;Interface de Programação de Aplicações&#8221;. Elas são uma forma de </span>
+        <b>integrar sistemas,</b>
+        <span style="font-weight: 400;"> possibilitando benefícios como a segurança dos dados, facilidade no intercâmbio entre informações com diferentes linguagens de programação e a monetização de acessos. Vamos nos aprofundar mais abaixo para entendermos melhor <strong>o que é API</strong>. </span>
+      </p>
+      <p>
+        <span id="more-155"></span>
+      </p>
+      <h3><strong>Mas o que significa API na prática?</strong></h3>
+      <p>
+        <span style="font-weight: 400;">As APIs são um tipo de “ponte” que conectam aplicações podendo ser utilizadas para os mais variados tipos de negócio, por empresas de diversos nichos de mercado ou tamanho, conforme veremos melhor ao longo de nosso post.</span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">A maioria das pessoas não sabe </span>
+        <b>o que é uma API</b>
+        <span style="font-weight: 400;">. Isso porque elas são invisíveis ao usuário comum, que enxerga apenas a interface dos softwares e aplicativos. No entanto, os profissionais de programação conhecem por dentro essa tecnologia que é resultado da evolução de diversos sistemas e ferramentas. Aplicativos e softwares de diversos tipos são apenas passíveis de construção por meio dos padrões e especificações disponibilizados pelas APIs.</span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">As APIs proporcionam a integração entre sistemas que possuem linguagem totalmente distintas de maneira ágil e segura. Em outras formas de integração de sistemas, o profissional que realiza o trabalho precisa, muitas vezes, instalar recursos compatíveis com o sistema no qual se busca efetuar a integração, gerando um grande trabalho e, consequentemente, atraso na geração de negócios eprocessos produtivos de uma companhia.</span>
+      </p>
+      <p> 
+        <span style="font-weight: 400;">As possibilidades disponibilizadas pelo uso das APIs proporcionam para os desenvolvedores de softwares e aplicativos a
+          possibilidade de conectar tecnologias heterogêneas, como diferentes banco de dados, por exemplo. É possível, também, utilizando uma estratégia de APIs,
+          manter um ecossistema entre empresa e parceiros, durante uma <a href="https://vertigo.com.br/como-uma-estrategia-de-apis-pode-te-ajudar-trocar-de-erp/?utm_source=post&amp;utm_medium=post&amp;utm_campaign=defini%C3%A7%C3%A3o-api&amp;utm_term=estrat%C3%A9gia-apis&amp;utm_content=post">troca de ERP</a>. 
+          Além disso, é possível fazer com que funcionalidades e ferramentas específicas de determinados aplicativos sejam utilizadas em outros, sem que isso cause qualquer dificuldade, conforme veremos no tópico a seguir.</span>
+      </p>
+      <h2><b>Vantagens da Integração por APIs</b></h2>
+      <p>
+        &nbsp;
+      </p>
+      <p>
+        <%= image_tag("vertigo.jpg",class: "center img_um")%>
+      </p>
+      <p>
+        &nbsp;
+      </p>
+      <p>
+        <span style="font-weight: 400;">A essa altura você já deve estar convencido de que as </span>
+        <b>Interfaces de Programação de Aplicações</b>
+        <span style="font-weight: 400;"> são muito benéficas e úteis, podendo ser utilizadas para um leque de soluções. Mas quais são as razões que tornam as integrações através de APIs mais interessantes que outros tipos? Veja algumas razões abaixo:</span>
+      </p>
+      <h3><b>Segurança</b></h3>
+      <p>
+        <span style="font-weight: 400;">A maneira como as APIs proporcionam a integração proporciona uma troca de informações de forma muito segura. Isso porque elas criam uma espécie de portão, na qual apenas conjunto específico de informações &#8211;
+          definido pela empresa proprietária da aplicação &#8211; estará disponível.
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">Exemplificando: Um banco possui diversas informações no sistemas internos quanto 
+          a assuntos como número de contas abertas por mês, clientes em débito, clientes que recebem valores superiores a 
+          renda média da população etc.
+       </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">Com a exposição de uma API seria possível para terceiros criar uma aplicação que
+          seja específica para consultar apenas dados de clientes em débito, ou apenas os com montantes altos em suas contas.
+          Esses dados podem ser de grande utilidade para empresas de crédito, no momento de realizar avaliações de risco.
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">Um <strong>Gateway de API</strong>
+        </span>
+        <span style="font-weight: 400;"> é o responsável por trazer segurança e auditoria para APIs. 
+        </span>
+      </p>
+      <p>
+      <span style="font-weight: 400;">
+        <div class="idea_box">
+          <div class="icon">
+            <i class="icon-lamp"></i>
+          </div>
+          <div class="desc">
+      </span><a href="https://vertigo.com.br/api-gateway-ou-api-management/">Aprenda mais sobre API Gateway aqui em nosso super conteúdo</a>
+        </div>
+      </div>
+      </p>
+      <h3><b>Monetização por acesso</b></h3>
+      <p>
+        <span style="font-weight: 400;">Imagine poder restringir o acesso às potencialidades da sua aplicação. As </span>
+        <span style="font-weight: 400;">Interface de Programação de Aplicações</span>
+        <span style="font-weight: 400;"> que possuem algum tipo de restrição quanto ao seu acesso são chamadas </span>
+        <b>APIs Privadas. </b>
+        <span style="font-weight: 400;">Falamos sobre a diferença entre as </span>
+        <a href="https://vertigo.com.br/api-publica-ou-privada-como-saber/">
+        <span style="font-weight: 400;">Públicas e Privadas em uma artigo em nosso blog</span>
+        </a>
+        <span style="font-weight: 400;">, no qual citamos a monetização como uma de suas potencialidades. </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">A <strong>monetização de APIs</strong> podem ser feitas através da cobrança por 
+          acesso a determinado tipo de informação. Como exemplo disso, podemos citar a empresa de streaming Netflix, que 
+          possibilita a obtenção ao seu conteúdo apenas aos seus assinantes, mediante a um custo.
+        </span>
+      </p>
+      <h3><b>Redução no volume de dados</b></h3>
+      <p>
+        <span style="font-weight: 400;">Como já dito acima, as APIs são capazes de fazer integrações de forma específica,
+          vinculando apenas um tipo de informação,  restringindo o acesso quanto a outras. Sob uma perspectiva de operação
+          do sistema, isso pode significar uma otimização de performance de plataforma.
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">A razão disso é que a restrição da manipulação de dados pode proporcionar uma melhor
+          aproveitamento de informações. A questão é a possibilidade de não ocupar o sistema com dados desnecessários.
+        </span>
+      </p>
+      <h3><b>Possibilidade de auditar acessos</b></h3>
+      <p>
+        <span style="font-weight: 400;">Quem acessou, quando, de onde e o que consultou. Essas são perguntas que uma API
+         sabe responder quanto aos modos como ela é utilizada. 
+        </span>
+        <a href="https://vertigo.com.br/api-gateway-ou-api-management/">
+          <span style="font-weight: 400;">Um Gateway de API</span>
+        </a> 
+        <span style="font-weight: 400;"> dá a possibilidade de ter uma perspectiva detalhada quanto ao fluxo de dados operando
+          através dele. 
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">É uma potencialidade importante para empresas que utilizam as API no e-commerce ou em
+          sistemas que manipulam dados de elevado valor ou necessidade de sigilo, como é o caso dos dados bancários. 
+        </span>
+      </p>
+      <h2><b>APIs do nosso cotidiano</b></h2>
+      <p>
+        <span style="font-weight: 400;">Seria impossível enumerar a quantidade de APIs que estão do nosso dia a dia. 
+          Atualmente, em um mundo cada vez mais interconectado, existem cada vez mais softwares que atendem especificamente
+          um determinado nicho de atividade. As 
+        </span>
+        <b>Interfaces de Programação de Aplicações</b>
+        <span style="font-weight: 400;"> se tornaram protagonistas em diversas tarefas que executamos no nosso dia a dia.
+         Veja algumas abaixo.
+        </span>
+      </p>
+      <h3><b>Facebook / UBER</b></h3>
+      <p>
+        <span style="font-weight: 400;">A popularidade da rede social de Mark Zuckerberg faz com que seja quase obrigatório
+          que se tenha uma conta no Facebook, não é mesmo? Por essa razão, a  API do Facebook é uma das mais utilizadas por
+          diversos serviços que buscam efetuar login de usuários em suas plataformas de negócio. Um grande conhecido entre os 
+          utilizadores dessa integração de sistemas é o aplicativo de transportes UBER. 
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">O Uber oferece, no momento de seu cadastro, a opção de se registrar com o telefone
+          celular. Porém, muitas pessoas clicam no botão referente ao login com o Facebook, que já costuma estar logado no
+          computador e nos smartphones de muitas pessoas.
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">A possibilidade de logar em aplicativos com um único login e senha tem como objetivo
+          facilitar a experiência do usuário na plataforma. Funciona como uma chave única para que o usuário acesse diversos
+          serviços oferecidos pela internet. Em troca, o Facebook obtém mais um dado referente ao seu público, colaborando
+          com a lógica de negócios da rede social.
+        </span>
+      </p>
+      <h3><b>Google Maps / Sites de hotéis</b></h3>
+      <p>
+        <span style="font-weight: 400;">Imagine que você é dono de um hotel. Pense como seria interessante colocar em seu site
+          um mapa do Google, no qual o visitante da página possa ver a melhor forma de chegar ao local, analisando se o serviço
+          atende as condições requisitadas. Idealize que seu potencial cliente realizou todo esse procedimento sem precisar 
+          sair da sua página 
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">As</span>
+        <b>APIs</b>
+        <span style="font-weight: 400;"> proporcionam essa</span>
+        <b> integração de sistema</b>
+        <span style="font-weight: 400;"> com o Google Maps, otimizando a experiência do usuário em uma página ou aplicativo.
+          A permanência de usuários na sua página aumenta as possibilidades de geração de negócios, já que as chances de que
+          seu visitante se disperse para outro conteúdo são reduzidas. 
+        </span>
+      </p>
+      <h3><b>Sites de E-Commerce / Operadoras de crédito</b></h3>
+      <p>
+        <span style="font-weight: 400;">As Interfaces de Programação de Aplicações podem funcionar dentro de um site de
+          e-commerce permitindo a utilização dos serviços que envolvem o banco e  operadoras que fornecem serviços do cartão.
+          Empresas como Buscapé e Google Shopping e Decolar só existem por conta das APIs, conforme falamos em nosso 
+        </span>
+        <a href="https://vertigo.com.br/o-valor-das-apis-para-o-varejo/">
+          <span style="font-weight: 400;">artigo sobre o uso da tecnologia de conexão no mercado Business-to-Business
+          </span>
+        </a>
+        <span style="font-weight: 400;"> (B2B).</span></p>
+      <p>
+        <span style="font-weight: 400;">A aplicação submete os dados fornecidos pelo usuário às APIs apropriadas, fazendo
+          com que eles sejam trabalhados com segurança e velocidade sem que o usuário perceba a complexidade do processo
+          em execução, tornando a sua experiência mais fluida e agradável e facilitando a concretização da transação.
+        </span>
+      </p>
+      <h3><b>Logar em site com Redes Sociais</b></h3>
+      <p>
+        <span style="font-weight: 400;">Provavelmente você já esteve em páginas de serviço onde era possível efetuar o seu
+          login utilizando redes sociais ou Gmail. Essa integração de contas pessoais com uma plataforma possui a 
+          potencialidade de personalizar a experiência do usuário em ambientes digitais.
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">Qualquer empresa pode ser beneficiada neste processo. Quando as 
+        </span>
+        <b>APIs</b>
+        <span style="font-weight: 400;"> possibilitam a integração entre aplicações, elas colaboram para que a empresa dona
+          da plataforma que está sendo acessada pelo usuário tenha acesso a informações importantes sobre quem navega no 
+          ambiente. 
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">As redes sociais, por exemplo, armazenam informações que podem ser úteis para avaliar
+          nossos hábitos de consumo, como idade, sexo, localização, locais frequentados, etc. Essas informações podem ser 
+          fundamentais para uma 
+        </span>
+        <a href="https://vertigo.com.br/a-importancia-das-apis-para-o-marketing-digital/">
+          <span style="font-weight: 400;">estratégia de marketing digital
+          </span>
+        </a>
+        <span style="font-weight: 400;"> e para área comercial de uma organização na hora de elaborar produtos personalizados para
+          seus clientes, amplificando seus resultados. 
+        </span>
+      </p>
+      <h2><b>História das APIs</b></h2>
+      <p>
+        <span style="font-weight: 400;">Já sabemos </span>
+        <b>o que são APIs</b>
+        <span style="font-weight: 400;"> e para que elas servem, mas de onde vieram? O acrônimo API é muito antigo na computação, mas a </span>
+        <b>integração de sistemas com utilização de APIs</b>
+        <span style="font-weight: 400;"> como a conhecemos hoje, baseada em protocolos abertos da web, começou nos Estados
+          Unidos acerca do ano 2000, protagonizada por empresas que, até hoje, são gigantes mundiais em business tecnológicos
+          dos mais variados objetivos.
+        </span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">Companhias como Ebay, Salesforce, Amazon e, um pouco mais tarde, o Twitter, 
+          enxergaram nessa ampliação de demanda por internet, a chance de gerar negócios online. A integração de interfaces
+          foi a forma de potencializar suas respectivas teia de negócios, gerando oportunidades para parceiros e clientes,
+          conforme veremos abaixo.
+        </span>
+      </p>
+      <h3><b>Salesforce</b></h3>
+      <p>
+        <%= image_tag("sales.png",class: "center img_dois")%>
+      </p>
+      <p>
+        <span style="font-weight: 400;">A primeira API foi da Salesforce, que disponibilizava um serviço de automação de força
+          de vendas. Ela oferecia a equipes de vendas externas uma ferramenta para que pudessem tomar decisões relativas aos
+          respectivos objetivos. A Salesforce identificava as necessidades dos clientes para compartilhar dados através de seus
+          diferentes tipos de negócios.
+        </span>
+      </p>
+      <h3><b>Ebay</b></h3>
+      <p>
+        <%= image_tag("ebay.png",class: "center img_tres")%>
+      </p>
+      <p>
+        <span style="font-weight: 400;">A empresa </span>
+        <a href="https://www.ebay.com/"><span style="font-weight: 400;">Ebay</span></a>
+        <span style="font-weight: 400;"> é até hoje um dos maiores sites de compra e venda de produtos. A API desse colosso
+          do e-commerce mundial também foi criada em 2000, tendo como objetivo a busca pela facilitação de negócios como propósito central. A aplicação foi responsável pela padronização da forma como as aplicações se integravam com a Ebay, tornando mais fácil para parceiros e desenvolvedores a produção de negócios dentro do ambiente do Ebay.</span></p>
+      <h3><b>Twitter</b></h3>
+      <p>
+        <%= image_tag("twitter_one.png",class: "center img_quatro")%>
+      </p>
+      <p>
+        <span style="font-weight: 400;">Enquanto os exemplos anteriores foram ligadas a melhora em processos de compra e venda,
+          o Twitter focou sua API explorando sua capacidade de promover a comunicação e sharing de conteúdo. Diversos sites,
+          em 2006, quando a aplicação foi criada, utilizaram o Twitter (e utilizam até hoje) como forma de compartilhamento
+          de páginas dentro do microblog mais popular da internet.
+        </span>
+      </p>
+
+      <div id='jp-relatedposts' class='jp-relatedposts' >
+      	<h3 class="jp-relatedposts-headline"><em>Referência:</em></h3>
+        <a href="https://vertigo.com.br/o-que-e-api-entenda-de-uma-maneira-simples">o-que-e-api-entenda-de-uma-maneira-simples</a> 
+      </div>
+      
+    </div>
+    </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Próximo", api_o_que_e_cliente_servidor_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+  </div>
+
+</div>

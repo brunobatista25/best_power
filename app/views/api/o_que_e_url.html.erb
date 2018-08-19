@@ -1,0 +1,65 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div> 
+  
+  <div class="col s9">
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Url", api_o_que_e_url_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", api_o_que_e_requisicao_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", api_o_que_e_metodos_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+    <h3>URL</h3>
+    <p>Esse é o endereço que deve ser acessado. É um conceito simples para quem está acostumado com a Internet.
+    </p>
+    <p>
+      A URL que você está usando agora começa com <em>sensedia.com/blog/</em>. Depois de &#8220;blog&#8221;,
+      vem um outro conjunto de caracteres que especifica exatamente qual recurso (ou no caso, qual post) você quer
+      acessar. Nesse momento, o recurso que você está acessando é o &#8220;o-que-sao-apis-parte-2-como-uma-API-funciona&#8221;.
+    </p>
+    <p>
+      <strong>Uma API é igualzinha. </strong>
+    </p>
+    <p>
+      Você sempre tem endereço que navega pelos diferentes recursos que estão sendo expostos. Se for a API do restaurante,
+      pode ser algo como &#8220;<em>restaurante-delicia.com/pratos/</em>&#8220;. Esse endereço é conhecido como o 
+      <strong>endpoint</strong> em que os recursos estarão disponíveis.
+    </p>
+    <p>
+      E se você quiser um <strong>bife à parmeggiana</strong> (o recurso, ou no caso, o prato), sua requisição deve conter
+      a URL <em>restaurante-delicia.com/pratos/parmeggiana</em>.
+    </p>
+
+    <div class="center">
+      <%= link_to "Voltar", api_o_que_e_requisicao_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", api_o_que_e_metodos_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

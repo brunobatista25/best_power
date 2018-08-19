@@ -5,7 +5,7 @@
 .fixarRodape {
     bottom: 0;
     position: fixed;
-    height: 40%;
+    height: 30%;
     width: 100%;
 }
 
@@ -88,3 +88,39 @@ display: none;
     height: auto;
     size: auto;
   }
+
+//redirecionando imagens dos textos de api
+.img_um {
+    max-width:616px;
+    max-height:583px;
+    width: auto;
+    height: auto;
+}
+
+.img_dois {
+    max-width:357px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
+.img_tres {
+    max-width:368px;
+    max-height:147px;
+    width: auto;
+    height: auto;
+}
+
+.img_quatro {
+    max-width:238px;
+    max-height:192px;
+    width: auto;
+    height: auto;
+}
+
+.img_cinco {
+    max-width:600px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+}

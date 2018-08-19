@@ -1,0 +1,411 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div> 
+  
+  <div class="col s9">
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Códigos de Erro(Cliente) 4xx", http_codigo_erro_cliente_path	, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", http_codigo_redirecionamento_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", http_codigo_erro_servidor_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+    <div class="row">   
+      <h2>Códigos 4xx Client Error- (Erro do cliente)</h2>
+    </div>
+
+    <div class="row">
+      <p> 
+        A classe de código de status 4xx destina-se a casos em que o cliente parece ter 
+        errado. Exceto ao responder a uma solicitação HEAD, o servidor deve incluir uma 
+        entidade contendo uma explicação da situação de erro e se é uma condição 
+        temporária ou permanente. Esses códigos de status são aplicáveis ​​a qualquer método
+        de solicitação. Os agentes do usuário devem exibir qualquer entidade incluída para
+         o usuário.
+      </p>
+      <p>
+       <i class="material-icons">star</i>Indica os códigos mais usados!
+      </p>
+    </div>
+
+    <div class="row">
+  
+  <div class="s6">
+     <div class="container">
+         <ul class="collapsible ">
+           <li>
+             <div class="collapsible-header"><i class="material-icons">star</i><a>400 Bad Request - (Requisiçaão ruim)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 A solicitação não pode ser atendida devido à sintaxe incorreta.Erro geral 
+                 ao atender a solicitação causaria um estado inválido. Erros de validação 
+                 de domínio, dados ausentes, etc. são alguns exemplos.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><i class="material-icons">star</i><a>401 Unauthorized - (Não autorizado)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Similar to 403 Forbidden, but specifically for use when authentication is
+                 possible but has failed or not yet been provided. The response must 
+                 include a WWW-Authenticate header field containing a challenge applicable
+                 to the requested resource. See Basic access authentication and Digest 
+                 access authentication.Error code response for missing or invalid 
+                 authentication token.
+              </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>402 Payment Required - (Pagamento Requerido)</a></div>
+             <div class="collapsible-body">
+               <span>
+                Reservado para uso futuro. A intenção original era que esse código pudesse
+                ser usado como parte de alguma forma de dinheiro digital ou esquema de 
+                micropagamento, mas isso não aconteceu, e esse código não é normalmente 
+                usado. Como exemplo de seu uso, no entanto, o serviço MobileMe da Apple 
+                gera um erro 402 ("httpStatusCode: 402" no log do console do Mac OS X) se 
+                a conta do MobileMe estiver inadimplente.
+               </span>
+             </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><i class="material-icons">star</i><a>403 Forbidden - (Proibido)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 A solicitação foi uma solicitação legal, mas o servidor está se recusando
+                 a responder a ela. Ao contrário de uma resposta 401 não autorizada, a 
+                 autenticação não fará diferença.Código de erro para o usuário não 
+                 autorizado a executar a operação ou o recurso não está disponível por 
+                 algum motivo (por exemplo, restrições de tempo etc.).
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><i class="material-icons">star</i><a>404 Not Found - (Não encontrado)</a></div>
+             <div class="collapsible-body">
+               <span>
+                  O recurso solicitado não pôde ser encontrado, mas pode estar disponível 
+                  novamente no futuro. Pedidos subseqüentes pelo cliente são permitidos.
+                  Usado quando o recurso solicitado não é encontrado, se ele não existe ou
+                  se houve um 401 ou 403 que, por motivos de segurança, o serviço deseja mascarar.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>405 Method Not Allowed - (Método não permitido)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Foi feito um pedido de um recurso usando um método de solicitação não 
+                 suportado por esse recurso; por exemplo, usando GET em um formulário que 
+                 requer que os dados sejam apresentados via POST ou usando PUT em um 
+                 recurso somente leitura.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>406 Not Acceptable - (Não aceitável)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O recurso solicitado só é capaz de gerar conteúdo não aceitável de acordo 
+                 com os cabeçalhos Accept enviados na solicitação.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>407 Proxy Authentication Required - (Autenticação de proxy necessária)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O cliente deve primeiro autenticar-se com o proxy.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>408 Request Timeout - (Solicitar tempo limite)</a></div>
+             <div class="collapsible-body">
+               <span>
+                  O servidor expirou aguardando a solicitação. De acordo com as 
+                  especificações HTTP do W3: "O cliente não produziu uma solicitação 
+                  dentro do tempo que o servidor estava preparado para aguardar. O cliente 
+                  PODERÁ repetir a solicitação sem modificações a qualquer momento 
+                  posterior."
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><i class="material-icons">star</i><a>409 Conflict - (Conflito)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Indica que a solicitação não pôde ser processada devido a um conflito na 
+                 solicitação, como um conflito de edição.Sempre que um conflito de 
+                 recursos for causado pelo preenchimento da solicitação. Entradas 
+                 duplicadas e exclusão de objetos raiz quando não há suporte para exclusão 
+                 em cascata são alguns exemplos.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>410 Gone - (Foi)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Indica que o recurso solicitado não está mais disponível e não estará 
+                 disponível novamente. Isso deve ser usado quando um recurso for 
+                 intencionalmente removido e o recurso precisar ser removido. Ao receber 
+                 um código de status 410, o cliente não deve solicitar o recurso novamente
+                 no futuro. Clientes como mecanismos de pesquisa devem remover o recurso 
+                 de seus índices. A maioria dos casos de uso não exige que os clientes e 
+                 os mecanismos de pesquisa limpem o recurso, e um "404 não encontrado" 
+                 pode ser usado em seu lugar.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>411 Length Required - (Comprimento necessário)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 The request did not specify the length of its content, which is required 
+                 by the requested resource.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>412 Precondition Failed - (Precondição Falhou)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O servidor não atende a uma das condições prévias que o solicitante 
+                 coloca no pedido.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>413 Request Entity Too Large - (Solicitar entidade muito grande)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 A solicitação é maior do que o servidor deseja ou pode processar.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>414 Request-URI Too Long - (Requisição-URI muito longa)</a></div>
+             <div class="collapsible-body">
+               <span>
+                O URI fornecido foi muito longo para o servidor processar.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>415 Unsupported Media Type - (Tipo de Mídia Não Suportado)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 A entidade de solicitação possui um tipo de mídia que o servidor ou 
+                 recurso não suporta. Por exemplo, o cliente carrega uma imagem como image 
+                 / svg + xml, mas o servidor exige que as imagens usem um formato 
+                 diferente.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>416 Requested Range Not Satisfiable - (Faixa Solicitada Não Disponível)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O cliente solicitou uma parte do arquivo, mas o servidor não pode 
+                 fornecer essa parte. Por exemplo, se o cliente solicitou uma parte do 
+                 arquivo que fica além do final do arquivo.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>417 Expectation Failed - (Expectativa Falhou)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O servidor não pode atender aos requisitos do campo Esperar cabeçalho de 
+                 solicitação.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>418 I'm a teapot (RFC 2324) - (Eu sou um bule de chá)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Este código foi definido em 1998 como uma das piadas tradicionais do IETF
+                 April Fools, no RFC 2324, Protocolo de Controle de Potenciômetro de Café 
+                 Hyper Text, e não se espera que seja implementado por servidores HTTP 
+                 reais. No entanto, existem implementações conhecidas. Um servidor Nginx 
+                 HTTP usa esse código para simular o comportamento de tipo goto em sua 
+                 configuração.
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>420 Enhance Your Calm (Twitter) - (Melhore a sua calma)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Retornado pela API de pesquisa e tendências do Twitter quando o cliente 
+                 está sendo limitado pela taxa. O texto é uma citação de 'Demolition Man' 
+                 e o código '420' é provavelmente uma referência à associação deste número 
+                 com a maconha. Outros serviços podem desejar implementar o código de 
+                 resposta 429 Too Many Requests.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>422 Unprocessable Entity (WebDAV) - (Entidade não processável)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 A solicitação foi bem formada, mas não pôde ser seguida devido a erros 
+                 semânticos.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>423 Locked (WebDAV) - (bloqueado)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O recurso que está sendo acessado está bloqueado.
+               </span>
+            </div>
+           </li>
+                                 <li>
+             <div class="collapsible-header"><a>424 Failed Dependency (WebDAV) - (Falha na Dependência )</a></div>
+             <div class="collapsible-body">
+               <span>
+                A solicitação falhou devido a falha de uma solicitação anterior (por 
+                exemplo, um PROPPATCH).
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>425 Reserved for WebDAV- (reservados para o WebDAV)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Definido nos rascunhos de "Protocolo de Coletas Avançadas do WebDAV", mas 
+                 não está presente no "Protocolo de Coletas Ordenadas do WebDAV (Web 
+                 Distributed Authoring and Versioning)".
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>426 Upgrade Required - (Upgrade necessário)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O cliente deve alternar para um protocolo diferente, como o TLS / 1.0.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>428 Precondition Required - (Pré-requisito necessário)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O servidor de origem requer que a solicitação seja condicional. 
+                 Destina-se a evitar "o problema de" atualização perdida ", onde um 
+                 cliente obtém o estado de um recurso, modifica-o e o coloca de volta no 
+                 servidor, enquanto um terceiro modifica o estado do servidor, gerando um 
+                 conflito.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>429 Too Many Requests - (pedidos em excesso)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 The user has sent too many requests in a given amount of time. Intended 
+                 for use with rate limiting schemes.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>431 Request Header Fields Too Large - (Campos de cabeçalho de solicitação muito grandes)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 O servidor não está disposto a processar a solicitação porque um campo de
+                 cabeçalho individual ou todos os campos de cabeçalho são grandes demais.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>444 No Response (Nginx) - (Sem Resposta)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Uma extensão do servidor Nginx HTTP. O servidor não retorna nenhuma 
+                 informação ao cliente e fecha a conexão (útil como um impedimento para 
+                 malware).
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>449 Retry With (Microsoft) - (tentar novamente com )</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Uma extensão da Microsoft. A solicitação deve ser repetida após a 
+                 execução da ação apropriada.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>450 Blocked by Windows Parental Controls (Microsoft) - (Bloqueado pelos Controles dos Pais do Windows)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Uma extensão da Microsoft. Este erro é fornecido quando os Controles dos 
+                 Pais do Windows estão ativados e estão bloqueando o acesso à determinada 
+                 página da Web.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>451 Unavailable For Legal Reasons- (indisponível por motivos legais)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Destina-se a ser usado quando o acesso a recursos é negado por motivos 
+                 legais, por exemplo, censura ou acesso bloqueado imposto pelo governo. 
+                 Uma referência ao romance distópico de 1953 Fahrenheit 451, onde os 
+                 livros são proibidos, e a temperatura de auto-ignição do papel, 451 ° F.
+               </span>
+            </div>
+           </li>
+           <li>
+             <div class="collapsible-header"><a>Client Closed Request (Pedido fechado do cliente) - (Continuar)</a></div>
+             <div class="collapsible-body">
+               <span>
+                 Uma extensão do servidor Nginx HTTP. Este código é introduzido para 
+                 registrar o caso quando a conexão é fechada pelo cliente enquanto o 
+                 servidor HTTP está processando sua solicitação, tornando o servidor 
+                 incapaz de enviar o cabeçalho HTTP de volta.
+               </span>
+            </div>
+           </li>
+         </ul>
+        
+      </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", http_codigo_redirecionamento_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", http_codigo_erro_servidor_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

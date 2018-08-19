@@ -33,12 +33,12 @@ Rails.application.routes.draw do
   get 'widgets/accordion'
   get 'widgets/autocomplete'
   get 'widgets/datapicker'
-#
+
   #iteracoes
   get 'iteracoes/draganddrop'
   get 'iteracoes/mousehover'
 
-  ##outros
+  #outros
   get 'outros/uploaddearquivos'
   post 'outros/uploaddearquivos'
   get 'outros/scroll'
@@ -47,11 +47,32 @@ Rails.application.routes.draw do
   get 'basicauth/home'
 
   #api
-  get 'api/get'
-  get 'api/post'
-  get 'api/put'
-  get 'api/delete'
   get 'api/home_api'
+  get 'api/o_que_e_api'
+  get 'api/o_que_e_cliente_servidor'
+  get 'api/o_que_e_requisicao'
+  get 'api/o_que_e_url'
+  get 'api/o_que_e_header'
+  get 'api/o_que_e_body'
+  get 'api/o_que_e_resposta'
+  get 'api/o_que_e_metodos'
+
+  #verbos
+  get 'verbos/get'
+  get 'verbos/post'
+  get 'verbos/put'
+  get 'verbos/delete'
+
+  #http
+  get 'http/codigo_http'
+  get 'http/codigo_informacoes'
+  get 'http/codigo_sucesso'
+  get 'http/codigo_redirecionamento'
+  get 'http/codigo_erro_cliente'
+  get 'http/codigo_erro_servidor'
+
+  #api batista
+  get 'apibatista/sobre_api'
 
   #cursos
 
