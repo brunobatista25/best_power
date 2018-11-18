@@ -3,10 +3,16 @@
           <%= image_tag("Logo-B-Seller.png", :alt => "rss feed") %>
           <ul class="right hide-on-med-and-down">
             <li><a href="https://consultoriabatista.herokuapp.com/">Consultoria do Batista</a></li>
-            <li><a href="https://www.udemy.com/testes-automatizados-de-api-com-httparty-rspec/">Curso de HTTParty</a></li>
-            <li><a href="https://www.udemy.com/automacao-de-testes-com-capybara-cucumber-e-ruby/">Curso de Capybara</a></li>
             <li><a href="https://www.youtube.com/channel/UCp554v_is_ZzjzSmAQyFfAA">Batista no Youtube</a></li>
             <li><a href="https://medium.com/automa%C3%A7%C3%A3o-com-batista">Batista no Medium</a></li>
+            <li>
+              <ul id = "dropdown" class = "dropdown-content">
+                <li><a id="dropdown1"  href="https://www.udemy.com/automacao-de-testes-com-capybara-cucumber-e-ruby/" onclick="ativaedesativadrop1()">Curso de Capybara</span></a></li>
+                <li><a id="dropdown2" href="https://www.udemy.com/testes-automatizados-de-api-com-httparty-rspec/" onclick="ativaedesativadrop2()">Curso de HTTparty</a></li>
+              </ul>
+              <a class = "btn dropdown-button orange" data-activates = "dropdown">Cursos do Batista
+              <i class = "mdi-navigation-arrow-drop-down right"></i></a>
+            </li>
           </ul>
         </div>
       </nav>
