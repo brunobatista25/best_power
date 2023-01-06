@@ -1,14 +1,11 @@
 source 'https://rubygems.org'
 
 ruby '2.3.0'
+gem 'rake', '12.3.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-
-
 gem 'rails_real_favicon'
-
 gem 'kaminari'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -17,10 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
 gem 'materialize-sass'
 gem 'material_icons'
 
@@ -58,7 +53,7 @@ gem 'sqlite3'
 end
 
 group :production do
- gem 'pg', "~> 0.15"
+
  gem 'rails_12factor'
 end
 
