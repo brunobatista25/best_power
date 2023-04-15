@@ -27,28 +27,6 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# Use SCSS for stylesheets
-gem "sass-rails"
-
-gem "rake"
-
-gem "materialize-sass"
-
-gem "material_icons"
-
-gem "kaminari"
-
-gem "jquery-rails"
-
-gem "rails_real_favicon"
-
-gem "uglifier"
-
-gem "coffee-rails"
-
-gem "turbolinks"
-
-gem "sdoc", group: :doc
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -92,3 +70,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "jquery-rails"
+
+gem "jquery-ui-rails"
+
+gem "sassc-rails"
