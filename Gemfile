@@ -76,3 +76,7 @@ gem "jquery-rails"
 gem "jquery-ui-rails"
 
 gem "sassc-rails"
+
+gem 'materialize-sass'
+gem 'material_icons'
+gem 'coffee-rails'

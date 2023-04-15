@@ -68,6 +68,8 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
+    autoprefixer-rails (10.4.13.0)
+      execjs (~> 2)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -81,6 +83,13 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    coffee-rails (5.0.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 5.2.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
@@ -88,6 +97,7 @@ GEM
       irb (>= 1.5.0)
       reline (>= 0.3.1)
     erubi (1.12.0)
+    execjs (2.8.1)
     ffi (1.15.5-x64-mingw32)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -117,6 +127,10 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.2)
+    material_icons (4.0.0)
+      railties (>= 3.2)
+    materialize-sass (1.0.0.1)
+      autoprefixer-rails (>= 6.0.3)
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
@@ -229,11 +243,14 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
+  coffee-rails
   debug
   importmap-rails
   jbuilder
   jquery-rails
   jquery-ui-rails
+  material_icons
+  materialize-sass
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   sassc-rails
