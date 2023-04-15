@@ -1,0 +1,62 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Modal", mudancadefoco_modal_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 center">
+        <h5>Modal</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 center">
+        <a class="waves-light btn modal-trigger" href="#modal1">Abrir</a>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Modal Teste</h4>
+            <p>Pensando mais a longo prazo, a execução dos pontos do programa garante a contribuição de um grupo importante na determinação da gestão inovadora da qual fazemos parte. Ainda assim, existem dúvidas a respeito de como o surgimento do comércio virtual desafia a capacidade de equalização das diretrizes de desenvolvimento para o futuro. A certificação de metodologias que nos auxiliam a lidar com o julgamento imparcial das eventualidades talvez venha a ressaltar a relatividade do impacto na agilidade decisória. Acima de tudo, é fundamental ressaltar que a percepção das dificuldades auxilia a preparação e a composição das novas proposições. </p>
+          </div>
+          <div class="modal-footer">
+            <a class="modal-close waves-green btn-flat">Fechar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="center">
+        <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

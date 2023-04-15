@@ -1,0 +1,110 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div> 
+  
+  <div class="col s9">
+      <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Requisição GET", verbos_get_path	, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", http_codigo_erro_servidor_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", verbos_post_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+    <h4>Requisição GET</h4>
+
+    <p>
+      Solicita a representação de um determinado recurso. É definido como um método seguro 
+      e não deve ser usado para disparar uma ação (remover um usuário, por exemplo).
+    </p>
+
+    <p>Exemplo:</p>
+    <a>https://contatosdobatista.herokuapp.com/contatos</a> 
+
+    <p>O resultado e uma lista de contatos:</p>
+
+    <code >
+      <pre id="pre-code-area" style="border: 1px solid #7A7A7A;"></pre>
+    </code>
+    
+    
+    <div class="center">
+      <%= link_to "Voltar", http_codigo_erro_servidor_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", verbos_post_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+    var yourObject = 
+  [
+    {
+        "id": 1,
+        "nome": "Clemencia",
+        "sobrenome": "Halvorson",
+        "email": "blainehirthe@gutmann.co",
+        "idade": 99,
+        "data_nascimento": "1984-05-26",
+        "tipo": {
+            "id": 3,
+            "descricao": "Trabalho"
+        },
+        "telefones": [],
+        "endereco": {
+            "id": 1,
+            "rua": "5479 Ricky Village",
+            "cidade": "Joelfort"
+        }
+    },
+    {
+        "id": 2,
+        "nome": "Winston",
+        "sobrenome": "Yost",
+        "email": "maire@dare.net",
+        "idade": 42,
+        "data_nascimento": "1977-10-18",
+        "tipo": {
+            "id": 3,
+            "descricao": "Trabalho"
+        },
+        "telefones": [
+            {
+                "id": 1,
+                "numero": "691.320.3152"
+            }
+        ],
+        "endereco": {
+            "id": 2,
+            "rua": "63204 Dewey Views",
+            "cidade": "Yostland"
+        }
+    }
+  ];
+
+var textedJson = JSON.stringify(yourObject, null, 4);
+//document.getElementById("json-area").value=textedJson;
+//document.getElementById("json-area").readOnly = true; 
+document.getElementById("pre-code-area").innerHTML = textedJson;
+</script>

@@ -1,0 +1,60 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div> 
+  
+  <div class="col s9">
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Body", api_o_que_e_body_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", api_o_que_e_header_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", api_o_que_e_resposta_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+    <h3>Body</h3>
+    <p>
+      Aqui vão todos os parâmetros que tornam cada requisição diferente entre si, são os <strong>detalhes</strong>.
+    </p>
+    <p>
+      O parmeggiana que você quer comer pode ser grande, pequeno, tamanho família, de frango, de carne, com diferentes tipos
+      de queijo ou molho, etc.
+    </p>
+    <p> 
+      Ao invés de criar um recurso chamado /parmeggiana-frango e outro /parmeggiana-carne e assim por diante, existe apenas
+      o /parmeggiana e cada tipo diferente é determinado pelas informações detalhadas que vão no Body.
+    </p>
+    <p>
+      Esse é um exemplo que facilita na criação de recursos. É claro que se fizer sentido para sua implementação enfatizar
+      a diferença entre esses tipos, você pode criar um recurso para cada.
+    </p>
+
+    <div class="center">
+      <%= link_to "Voltar", api_o_que_e_header_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", api_o_que_e_resposta_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

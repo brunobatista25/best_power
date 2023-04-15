@@ -1,0 +1,85 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+      <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+      <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      <%= link_to "Alert", mudancadefoco_alert_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="row">
+ 
+      <div class="center">
+        <div class='example'>
+          <h3>JavaScript Alerts</h3>
+          <p>Aqui estão alguns exemplos de alertas JavaScript diferentes que podem ser problemáticos para automação</p>
+          <ul style='list-style-type: none;'>
+            <li><button class="btn  waves-light green" onclick="jsAlert()">Clique para JS Alert</button></li>
+            <br></br>
+            <li><button class="btn  waves-light green" onclick="jsConfirm()">Clique para JS Confirm</button></li>
+            <br></br>
+            <li><button  class="btn  waves-light green" onclick="jsPrompt()">Clique para JS Prompt</button></li>
+          </ul>
+          <h4>Result:</h4>
+          <p id='result' style='color:green'></p>
+        </div>
+  
+        <div class="row">
+        <div class="center">
+        <%= link_to "Voltar", treinamento_home_path, :method => "get", class: "btn red"%>
+        </div>
+        </div>
+      
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+  function jsAlert() {
+    alert('Eu sou um alerta JS!');
+    log('Você clicou no alerta com sucesso!!');
+  }
+
+  function jsConfirm() {
+    var c = confirm('Eu sou uma confirmação JS!');
+    var result = c === true ? 'Ok' : 'Cancel';
+    log('Você clicou: ' + result);
+  }
+
+  function jsPrompt() {
+    var p = prompt('Eu sou um  prompt JS!');
+    log('Você digitou: ' + p);
+  }
+
+  function log(msg) {
+    var result = document.getElementById('result');
+    result.innerHTML = msg;
+  }
+</script>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

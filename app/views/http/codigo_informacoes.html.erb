@@ -1,0 +1,110 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div> 
+  
+  <div class="col s9">
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Códigos de Informações 1xx", http_codigo_informacoes_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", http_codigo_http_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", http_codigo_sucesso_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+    <div class="row">   
+      <h2>Códigos 1xx Informational- (Informativos)</h2>
+    </div>
+
+    <div class="row">
+      <p>
+        Solicitação recebida, processo contínuo.Essa classe de código de status indica uma
+        resposta provisória, consistindo apenas na linha de status e nos cabeçalhos 
+        opcionais, e é finalizada por uma linha vazia. Como o HTTP / 1.0 não definiu 
+        nenhum código de status 1xx, os servidores não devem enviar uma resposta 1xx a um 
+        cliente HTTP / 1.0, exceto em condições experimentais.
+      </p>
+      <p>
+       <i class="material-icons">star</i>Indica os códigos mais usados!
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div class="center">
+           <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><a>100-Continue - (Continuar)</a></div>
+               <div class="collapsible-body">
+                 <span>
+                   Isso significa que o servidor recebeu os cabeçalhos de solicitação e 
+                   que o cliente deve continuar enviando o corpo da solicitação 
+                   (no caso de uma solicitação para a qual um corpo precisa ser enviado,
+                   por exemplo, uma solicitação POST). Se o corpo da solicitação for 
+                   grande, enviá-lo para um servidor quando uma solicitação já foi 
+                   rejeitada com base em cabeçalhos inadequados é ineficiente. 
+                   Para que um servidor verifique se a solicitação pode ser aceita com 
+                   base apenas nos cabeçalhos da solicitação, o cliente deve enviar 
+                   Esperar: 100-continue como cabeçalho em sua solicitação inicial e
+                   verifique se um código de status 100 Continue é recebido antes de 
+                   continuar (ou recebe 417 Expectativa falhada e não continua).
+                 </span>
+              </div>
+             </li>
+             <li>
+               <div class="collapsible-header"><a>101-Switching Protocols - (Protocolos de Comutação)</a></div>
+               <div class="collapsible-body">
+                 <span>
+                   Isso significa que o solicitante pediu ao servidor para trocar os 
+                   protocolos e o servidor está confirmando que fará isso.
+                </span>
+              </div>
+             </li>
+             <li>
+               <div class="collapsible-header"><a>102-Processing (WebDAV)</a></div>
+               <div class="collapsible-body">
+                 <span>
+                   Como uma solicitação do WebDAV pode conter muitas sub-solicitações 
+                   envolvendo operações de arquivo, pode levar muito tempo para concluir a
+                   solicitação. Esse código indica que o servidor recebeu e está 
+                   processando a solicitação, mas nenhuma resposta está disponível ainda.
+                   Isso impede que o cliente expire e presume que a solicitação foi 
+                   perdida.
+                 </span>
+               </div>
+             </li>
+           </ul>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", http_codigo_http_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", http_codigo_sucesso_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

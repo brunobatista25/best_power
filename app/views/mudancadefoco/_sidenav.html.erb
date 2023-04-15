@@ -1,0 +1,60 @@
+<h4 class="bold" style="margin-top: 50px;">Lista de Funcionalidades</h4>
+<ul class="collapsible collapsible-accordion">
+ <li class="bold"><a class="collapsible-header ">Formulário</a>
+   <div class="collapsible-body">
+     <ul>
+       <li><%= link_to "Criar Usuários", new_user_path, :method => "get"%></li>
+       <li><%= link_to "Lista de Usuários", users_path, :method => "get"%></li>
+     </ul>
+   </div>
+ </li>
+ <li class="bold"><a class="collapsible-header waves-teal">Busca de elementos</a>
+   <div class="collapsible-body">
+     <ul>  
+       <li><%= link_to "Links", buscaelementos_links_path, :method => "get"%></li>
+       <li><%= link_to "Inputs e TextField", buscaelementos_inputsetextfield_path, :method => "get"%></li>
+       <li><%= link_to "Botões", buscaelementos_botoes_path, :method => "get"%></li>
+       <li><%= link_to "Radio e Checkbox", buscaelementos_radioecheckbox_path, :method => "get"%></li>
+       <li><%= link_to "Dropdown e Select", buscaelementos_dropdowneselect_path, :method => "get"%></li>
+       <li><%= link_to "Textos", buscaelementos_textos_path, :method => "get"%></li>
+       <li><%= link_to "Tabela", buscaelementos_table_path, :method => "get"%></li>
+     </ul>
+   </div>
+ </li>
+ <li class="bold active"><a class="collapsible-header waves-teal">Mudança de foco</a>
+   <div class="collapsible-body">
+     <ul>
+       <li><%= link_to "Alert", mudancadefoco_alert_path, :method => "get"%></li>
+       <li><%= link_to "Iframe", mudancadefoco_iframe_path, :method => "get"%></li>
+       <li><%= link_to "Janela", mudancadefoco_janela_path, :method => "get"%></li>
+       <li><%= link_to "Modal", mudancadefoco_modal_path, :method => "get"%></li>
+     </ul>
+   </div>
+ </li>
+ <li class="bold"><a class="collapsible-header waves-teal">Widgets</a>
+   <div class="collapsible-body">
+     <ul> 
+       <li><%= link_to "Accordion", widgets_accordion_path, :method => "get"%></li>
+       <li><%= link_to "Autocomplete", widgets_autocomplete_path, :method => "get"%></li>
+       <li><%= link_to "Datapicker", widgets_datapicker_path, :method => "get"%></li>
+     </ul>
+   </div>
+ </li>
+ <li class="bold"><a class="collapsible-header waves-teal">Iterações</a>
+   <div class="collapsible-body">
+     <ul>
+       <li><%= link_to "Drag And Drop", iteracoes_draganddrop_path, :method => "get"%></li>
+       <li><%= link_to "Mousehover", iteracoes_mousehover_path, :method => "get"%></li>
+     </ul>
+   </div>
+ </li>
+ <li class="bold"><a class="collapsible-header waves-teal">Outros</a>
+   <div class="collapsible-body">
+     <ul>
+       <li><%= link_to "Upload de Arquivo", outros_uploaddearquivos_path, :method => "get"%></li>
+       <li><%= link_to "Basic Auth(user:admin, password: admin)", basicauth_home_path, :method => "get"%></li>
+       <li><%= link_to "Scroll", outros_scroll_path, :method => "get"%></li>
+     </ul>
+   </div>
+ </li>
+</ul>

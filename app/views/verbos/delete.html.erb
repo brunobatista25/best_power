@@ -1,0 +1,49 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div> 
+  
+  <div class="col s9">
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Requisição DELETE", verbos_delete_path	, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", verbos_put_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+    <h3>Delete</h3>
+    <p>
+    Remove um recurso. Deve retornar o status 204 caso não exista nenhum recurso para a 
+    URI especificada.
+    Para fazer uma requisição DELETE para alterar contatos na api basta dar um DELETE na url:
+    <a>https://contatosdobatista.herokuapp.com/tipos/6</a>
+    </p>
+
+           <div class="center">
+        <%= link_to "Voltar", verbos_put_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

@@ -1,0 +1,126 @@
+@import 'materialize';
+@import 'material_icons';
+
+//css auxiliares
+.fixarRodape {
+    bottom: 0;
+    position: fixed;
+    height: 30%;
+    width: 100%;
+}
+
+.tamanhodiv {
+    height: 10px;
+}
+
+.tamanhodiv2 {
+    height: 60px;
+}
+
+.breadcrumb:before {
+    color: #0d0e0d;
+}
+
+.left {
+    text-align: left;
+}
+
+
+.icons-list li{
+    display: inline;
+    margin: 0px;
+}
+
+.tipo{
+    height: 45px;
+    width: 45px;
+  }
+
+  .icons-list-item{
+    font-family: SocialIcons;
+    font-size: 64px;
+    color: white
+  }
+  
+  .icons-list-item:hover{
+    color: black;
+  }
+
+.character-counter{
+display: none;
+}
+
+.td_quebra_nome{
+    width:200px;
+}
+
+.td_quebra_ultimo{
+    width:200px;
+}
+
+.td_quebra_email{
+    width:200px;
+}
+
+.td_quebra_universidade{
+    width:100px;
+}
+
+.td_quebra_sexo{
+    width:20px;
+}
+
+.td_quebra_profissao{
+    width:50px;
+}
+
+.td_quebra_idade{
+    width:10px;
+}
+
+.td_quebra_endereco{
+    width:400px;
+}
+
+.pagination{
+    background: #1e88e5;
+    width: auto;
+    height: auto;
+    size: auto;
+  }
+
+//redirecionando imagens dos textos de api
+.img_um {
+    max-width:616px;
+    max-height:583px;
+    width: auto;
+    height: auto;
+}
+
+.img_dois {
+    max-width:357px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
+.img_tres {
+    max-width:368px;
+    max-height:147px;
+    width: auto;
+    height: auto;
+}
+
+.img_quatro {
+    max-width:238px;
+    max-height:192px;
+    width: auto;
+    height: auto;
+}
+
+.img_cinco {
+    max-width:600px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+}
