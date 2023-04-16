@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  get 'home/index'
+  root 'home#index' # ok
+  get 'home/index' # ok
 
   #treinamento home
   #falta user
@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'buscaelementos/inputsetextfield' # ok
   get 'buscaelementos/botoes' # ok
   get 'buscaelementos/textfields' # ok
-  get 'buscaelementos/radioecheckbox'
+  get 'buscaelementos/radioecheckbox' # ok
   get 'buscaelementos/dropdowneselect'
   get 'buscaelementos/textos' # ok
   get 'buscaelementos/table' # ok
@@ -47,7 +47,7 @@ Rails.application.routes.draw do
   get 'outros/scroll' # ok
 
   #auth
-  get 'basicauth/home' #not
+  get 'basicauth/home' 
 
   #api
   get 'api/home_api' # ok
