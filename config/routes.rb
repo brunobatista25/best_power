@@ -3,45 +3,51 @@ Rails.application.routes.draw do
   get 'home/index'
 
   #treinamento home
-  get 'treinamento/home'
+  #falta user
+  get 'treinamento/home' # ok
 
   #busca elemento
-  get 'buscaelementos/links'
-  get 'buscaelementos/inputsetextfield'
+  #falta user
+  get 'buscaelementos/links' # ok
+  get 'buscaelementos/inputsetextfield' # ok
   get 'buscaelementos/botoes'
-  get 'buscaelementos/textfields'
+  get 'buscaelementos/textfields' # ok
   get 'buscaelementos/radioecheckbox'
   get 'buscaelementos/dropdowneselect'
-  get 'buscaelementos/textos'
-  get 'buscaelementos/table'
-  get 'buscaelementos/success'
-  get 'buscaelementos/notfound'
-  get 'buscaelementos/badrequest'
-  get 'buscaelementos/internalservererror'
+  get 'buscaelementos/textos' # ok
+  get 'buscaelementos/table' # ok
+  get 'buscaelementos/success' # ok
+  get 'buscaelementos/notfound' # ok
+  get 'buscaelementos/badrequest' # ok
+  get 'buscaelementos/internalservererror' #ok
  
   #mudanca de foco
-  get 'mudancadefoco/alert'
-  get 'mudancadefoco/iframe'
-  get 'mudancadefoco/janela'
-  get 'mudancadefoco/newwindow'
-  get 'mudancadefoco/modal'
+  #falta user
+  get 'mudancadefoco/alert' # ok
+  get 'mudancadefoco/iframe' # ok
+  get 'mudancadefoco/janela' # ok
+  get 'mudancadefoco/newwindow' # ok
+  get 'mudancadefoco/modal' 
 
   #widgets
-  get 'widgets/accordion'
+  #falta user
+  get 'widgets/accordion' # ok
   get 'widgets/autocomplete'
-  get 'widgets/datapicker'
+  get 'widgets/datapicker' # ok
 
   #iteracoes
-  get 'iteracoes/draganddrop'
-  get 'iteracoes/mousehover'
+  #falta user
+  get 'iteracoes/draganddrop' # ok
+  get 'iteracoes/mousehover' # ok
 
   #outros
-  get 'outros/uploaddearquivos'
-  post 'outros/uploaddearquivos'
-  get 'outros/scroll'
+  #falta user
+  get 'outros/uploaddearquivos' # ok
+  post 'outros/uploaddearquivos' # ok
+  get 'outros/scroll' # ok
 
   #auth
-  get 'basicauth/home'
+  get 'basicauth/home' #not
 
   #api
   get 'api/home_api' # ok
