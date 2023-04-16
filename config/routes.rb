@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  #root
+  root 'home#index'
+  get 'home/index'
+
+
+  #treinamento home
   get 'treinamento/home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  #api batista
+  get 'apibatista/sobre_api'
 end

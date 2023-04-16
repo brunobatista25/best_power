@@ -1,0 +1,106 @@
+      <nav class="blue darken-4" role="navigation">
+        <div class="nav-wrapper">
+          <%= image_tag("Logo-B-Seller.png", :alt => "rss feed") %>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://consultoriabatista.herokuapp.com/">Consultoria do Batista</a></li>
+            <li><a href="https://www.youtube.com/channel/UCp554v_is_ZzjzSmAQyFfAA">Batista no Youtube</a></li>
+            <li><a href="https://medium.com/automa%C3%A7%C3%A3o-com-batista">Batista no Medium</a></li>
+            <li>
+              <ul id = "dropdown" class = "dropdown-content">
+                <li><a id="dropdown1"  href="https://www.udemy.com/automacao-de-testes-com-capybara-cucumber-e-ruby/" onclick="ativaedesativadrop1()">Curso de Capybara</span></a></li>
+                <li><a id="dropdown2" href="https://www.udemy.com/testes-automatizados-de-api-com-httparty-rspec/" onclick="ativaedesativadrop2()">Curso de HTTparty</a></li>
+              </ul>
+              <a class = "btn dropdown-button orange" data-activates = "dropdown">Cursos do Batista
+              <i class = "mdi-navigation-arrow-drop-down right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class=" s12 center">
+        <h4 class=" header col orange-text">Site para Automação</h4>
+      </div>
+
+      <div class="tamanhodiv1"></div>
+
+     <div class="row col s12">
+
+        <div class="col s6">
+
+          <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+              <div class="row center">
+              <div class="col s12 center">
+                <h4 class=" header col s12 orange-text">Automação de Web</h4>
+              </div>
+              </div>
+              <div class="row center">
+                <p class="header col s12 light">
+                <font size="4">Um site feito em materialize e rails com diversos tipos de funcionalidades para fazer automação.</font></p>
+              </div>
+              <div class="row center">
+                 <%= link_to "Começar Automação Web", treinamento_home_path, :method => "get", class:"btn waves-light orange"%>
+              </div>
+            </div>
+          </div>
+
+       </div>
+
+         <div class="col s6">
+
+          <div class="section no-pad-bot" id="index-banner2">
+            <div class="container">
+              <div class="row center">
+              <div class="col s12 center">
+                <h4 class=" header col s12 orange-text">Automação de Api Rest</h4>
+              </div>
+              </div>
+              <div class="row center">
+                <p class="header col s12 light">
+                <font size="3">Uma API feita em rails com diversos tipos de funcionalidades para fazer automação de uma API REST.</font></p>
+              </div>
+              <div class="row center">
+                 <%= link_to "Começar Automação de Api", apibatista_sobre_api_path, :method => "get", class:"btn waves-light orange"%>
+              </div>
+              <br><br>
+            </div>
+          </div>
+
+        </div> 
+ 
+      </div>
+
+  <footer class="page-footer blue darken-4 fixarRodape ">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h6 class="white-text">Bruno Batista</h6>
+          <p class="grey-text text-lighten-4">
+          <font size="2">Site foi criado para ajudar a comunidade de testes para treinar a automação.</font></p>
+          <p>© 2018 Copyright Bruno Batista <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/bruno-batista-87734464" target="_blank">Desenvolvido por Bruno Batista</a></p>
+        </div>
+        <div class="col l5 s12">
+          <h6 class="white-text">Redes Sociais</h6>
+          <ul class="icons-list">
+            <li><a href="https://www.youtube.com/channel/UCp554v_is_ZzjzSmAQyFfAA" title="Youtube"><span class="icons-list-item"><%= image_tag("youtube.png",class: "tipo")%></span></a></li>
+            <li><a href="https://medium.com/@brunobatista101" title="Medium"><span class="icons-list-item"><%= image_tag("medium.png",class: "tipo")%></span></a></li>
+            <li><a href="https://www.linkedin.com/in/bruno-batista-87734464" title="Linkedin"><span class="icons-list-item"><%= image_tag("linkedin.png",class: "tipo")%></span></a></li>
+            <li><a href="https://github.com/brunobatista25" title="Github"><span class="icons-list-item"><%= image_tag("Github.png",class: "tipo")%></span></a></li>
+            <li><a href="https://www.facebook.com/Brunobatistatestes/" title="Facebook"><span class="icons-list-item"><%= image_tag("facebook.png",class: "tipo")%></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
