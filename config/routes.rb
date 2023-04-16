@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   #falta user
   get 'buscaelementos/links' # ok
   get 'buscaelementos/inputsetextfield' # ok
-  get 'buscaelementos/botoes'
+  get 'buscaelementos/botoes' # ok
   get 'buscaelementos/textfields' # ok
   get 'buscaelementos/radioecheckbox'
   get 'buscaelementos/dropdowneselect'
@@ -27,12 +27,12 @@ Rails.application.routes.draw do
   get 'mudancadefoco/iframe' # ok
   get 'mudancadefoco/janela' # ok
   get 'mudancadefoco/newwindow' # ok
-  get 'mudancadefoco/modal' 
+  get 'mudancadefoco/modal' # ok
 
   #widgets
   #falta user
   get 'widgets/accordion' # ok
-  get 'widgets/autocomplete'
+  get 'widgets/autocomplete' # ok
   get 'widgets/datapicker' # ok
 
   #iteracoes
@@ -78,6 +78,6 @@ Rails.application.routes.draw do
   get 'apibatista/sobre_api' # ok
 
   #cursos
-  get 'cursos/home'
+  get 'cursos/home' # ok
 
 end
