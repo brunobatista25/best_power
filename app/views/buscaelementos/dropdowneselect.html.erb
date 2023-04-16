@@ -32,13 +32,13 @@
         <div class="col s5">
           <div class="row">
             <ul id= "dropdown" class= "dropdown-content">
-              <li><a id="dropdown1" onclick="ativaedesativadrop1()">Inbox<span class= "badge">12</span></a></li>
-              <li><a id="dropdown2" onclick="ativaedesativadrop2()">Unread<span class= "new badge">4</span></a></li>
+              <li><a id="dropdown1" onclick="ativaedesativadrop1()">Inbox<span class="badge">12</span></a></li>
+              <li><a id="dropdown2" onclick="ativaedesativadrop2()">Unread<span class="new badge">4</span></a></li>
               <li><a  id="dropdown3" onclick="ativaedesativadrop3()">Sent</a></li>
               <li class= "divider"></li>
-              <li><a id="dropdown4" onclick="ativaedesativadrop4()">Outbox<span class= "badge">14</span></a></li>
+              <li><a id="dropdown4" onclick="ativaedesativadrop4()">Outbox<span class="badge">14</span></a></li>
             </ul>
-              <a class= "btn dropdown-button" href= "#" data-activates= "dropdown">Mail Box
+              <a class= "btn dropdown-button" href= "#" data-target= "dropdown">Mail Box
               <i class= "mdi-navigation-arrow-drop-down right"></i></a>
           </div>
         </div>
@@ -57,8 +57,8 @@
 
       <div>
         <div class="input-field col s12">
-          <select>
-            <option value="" disabled selected>Escolha sua opção</option>
+          <select multiple>
+            <option value="" disabled >Escolha sua opção</option>
             <option value="1">Naruto</option>
             <option value="2">Dragon Ball</option>
             <option value="3">Cavaleiros dos Zodiacos</option>
@@ -68,7 +68,7 @@
 
         <div class="input-field col s12">
           <select multiple>
-            <option value="" disabled selected>Escolha sua opção</option>
+            <option value="" disabled >Escolha sua opção</option>
             <option value="1">Ronaldo</option>
             <option value="2">Ronaldinho Gaucho</option>
             <option value="3">Romario</option>
@@ -92,23 +92,23 @@
 
         <div class="input-field col s12 m6">
           <select class="icons">
-            <option value="" disabled selected>Gênero</option>
-            <option value="" data-icon="images/sample-1.jpg" class="left circle">Homem</option>
-            <option value="" data-icon="images/office.jpg" class="left circle">Mulher</option>
+            <option value="" disabled >Gênero</option>
+            <option value=""  class="left circle">Homem</option>
+            <option value=""  class="left circle">Mulher</option>
           </select>
           <label>Escolha sua opção</label>
         </div>
         <div class="input-field col s12 m6">
           <select class="icons">
-            <option value="" disabled selected>Sexo</option>
-            <option value="" data-icon="images/sample-1.jpg" class="left circle">Masculino</option>
-            <option value="" data-icon="images/office.jpg" class="left circle">Feminino</option>
+            <option value="" disabled >Sexo</option>
+            <option value=""  class="left circle">Masculino</option>
+            <option value=""  class="left circle">Feminino</option>
           </select>
           <label>Escolha sua opção</label>
         </div>
 
         <label>Browser Favotiro</label>
-        <select id="dropdown"class="browser-default">
+        <select id="dropdown" class="browser-default">
           <option value="" disabled selected>Escolha sua opção</option>
           <option value="1">Chrome</option>
           <option value="2">Firefox</option>

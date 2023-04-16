@@ -123,6 +123,15 @@ jQuery(function() {
     $('.collapsible').collapsible();
 })
 
+jQuery(function() { 
+    $('.dropdown-button').dropdown();
+})
+
+jQuery(function() { 
+    $('select').formSelect();
+})
+
+
 // jQuery(function() { 
 //     $('select').material_select();
 // })
