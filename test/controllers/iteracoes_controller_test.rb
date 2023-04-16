@@ -1,7 +1,9 @@
 require 'test_helper'
 
-class IteracoesControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class IteracoesControllerTest < ActionDispatch::IntegrationTest
+  test "should get home" do
+    get iteracoes_home_url
+    assert_response :success
+  end
+
 end

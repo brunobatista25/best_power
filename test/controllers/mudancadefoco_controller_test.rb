@@ -1,7 +1,9 @@
 require 'test_helper'
 
-class MudancadefocoControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class MudancadefocoControllerTest < ActionDispatch::IntegrationTest
+  test "should get home" do
+    get mudancadefoco_home_url
+    assert_response :success
+  end
+
 end

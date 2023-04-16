@@ -1,7 +1,9 @@
 require 'test_helper'
 
-class OutrosControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class OutrosControllerTest < ActionDispatch::IntegrationTest
+  test "should get home" do
+    get outros_home_url
+    assert_response :success
+  end
+
 end

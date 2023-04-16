@@ -1,7 +1,9 @@
 require 'test_helper'
 
-class BasicauthControllerTest < ActionController::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+class BasicauthControllerTest < ActionDispatch::IntegrationTest
+  test "should get home" do
+    get basicauth_home_url
+    assert_response :success
+  end
+
 end

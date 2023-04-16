@@ -1,5 +1,5 @@
 class BasicauthController < ApplicationController
-  before_filter :authenticate
+  before_action  :authenticate
 
   def home
   end
