@@ -1,33 +1,33 @@
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
 <%= render "navbar"%>
 <div class="row">
 
   <div class="col s3">
     <%= render "sidenav"%>
-  </div> 
-  
+  </div>   
+
   <div class="col s9">
+
     <div class="row">
       <div class="col s12" style="margin-top: 20px;">
         <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
-        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
-        <%= link_to "Sobre a API", apibatista_sobre_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Janela", mudancadefoco_janela_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Nova Janela", mudancadefoco_newwindow_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
       </div>
     </div>
 
-    <div class="center">
-      <%= image_tag("contatos.png",class: "center img_cinco")%>
+    <div class="row">
+       <div class="tamanhodiv2">
+         <h5 class="red-text text-darken-1 center">Você Abriu uma nova janela!!</h5>
+       </div>
     </div>
 
-    <h2 class="center">Api de Tarefas e Contatos</h2>
-
-    <p class="center">Uma Api de tarefas e lista de contatos</p>
-    <p class="center">
-      Documentação da API:
-    <a>https://app.apiary.io/apidetarefas</a>
-    </p>
+    <div class="row">
+      <div class="center">
+        <%= image_tag("deadpool.png",class: "center")%>
+        <%= button_to "Voltar", treinamento_home_path, :method => "get", class:  "btn waves-light red"%>
+      </div>
+    </div>
 
   </div>
 

@@ -1,0 +1,160 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+  
+  <div class="col s9">
+
+      <div class="row">
+        <div class="col s12" style="margin-top: 20px;">
+          <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+          <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+          <%= link_to "Textos", buscaelementos_textos_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        </div>
+      </div>
+
+
+      <div class="row">
+
+        <div class="col s6">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <%= image_tag("debugi.png", :alt => "rss feed") %>
+                <a class="btn-floating halfway-fab waves-light red" href="https://medium.com/automa%C3%A7%C3%A3o-com-batista/debugando-com-o-byebug-2257ae37c3e" ><i class="material-icons">link</i></a>
+              </div>
+              <div class="card-content">
+              <b>Debugando com ByeByug.</b>
+                <p>Você já passou pela situação de não estar conseguindo rodar um comando em testes, por algum motivo de elemento mapeado errado entre outras situaçōes. E ter que rodar seus testes de novo para ver se conseguiu mapear correto ou se funcionou o comando que você inseriu?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <%= image_tag("capyrspec.png", :alt => "rss feed") %>
+                  <a class="btn-floating halfway-fab waves-light red" href="https://medium.com/automa%C3%A7%C3%A3o-com-batista/trabalhando-com-verifica%C3%A7%C3%B5es-e-esperas-de-elementos-com-o-capybara-siteprism-e-rspec-parte-ii-6b12a6a39f77"><i class="material-icons">link</i></a>
+                </div>
+                <div class="card-content">
+                <b> Trabalhando com verificações e esperas de elementos com o Capybara, SitePrism e Rspec.(Parte II)</b>          
+                  <p>Você já passou pela situação de não encontrar um elemento na tela ou até mesmo ele estando lá e dar erro na sua automação:
+                    Então vou falar um pouco sobre alguns métodos para verificação de elementos e espera de elementos..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <div class="col s6">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <%= image_tag("bye.jpg", :alt => "rss feed") %>
+                <a class="btn-floating halfway-fab waves-light red" href="https://medium.com/automa%C3%A7%C3%A3o-com-batista/aprenda-por-definitivo-a-usar-css-selector-adeus-xpath-1f3956763c2" ><i class="material-icons">link</i></a>
+              </div>
+              <div class="card-content">
+              <b> Aprenda por definitivo a usar CSS Selector(Adeus Xpath).</b>
+                <p>Pra quem começa na área de testes automatizados a primeira coisa que aprende, é buscar elementos por Xpath pelo fato de existir umas ferramentas que auxiliam na busca de elementos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <%= image_tag("capyrspec.png", :alt => "rss feed") %>
+                  <a class="btn-floating halfway-fab waves-light red" href="https://medium.com/automa%C3%A7%C3%A3o-com-batista/trabalhando-com-verifica%C3%A7%C3%B5es-e-esperas-de-elementos-com-o-capybara-siteprism-e-rspec-parte-i-abfaea6c3ea7"><i class="material-icons">link</i></a>
+                </div>
+                <div class="card-content">
+                <b> Trabalhando com verificações e esperas de elementos com o Capybara, SitePrism e Rspec.(Parte I)</b>             
+                  <p>Você já passou pela situação de não encontrar um elemento na tela ou até mesmo ele estando lá e dar erro na sua automação:
+                     Então vou falar um pouco sobre alguns métodos para verificação de elementos e espera de elementos..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    <div class="row">
+
+      <div class="col s6">
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <%= image_tag("drake.jpg", :alt => "rss feed") %>
+              <a class="btn-floating halfway-fab waves-light red" href="https://medium.com/automa%C3%A7%C3%A3o-com-batista/5-dicas-para-fazer-um-teste-automatizado-em-ruby-com-qualidade-chega-de-gambiarra-9be62ffb2812"><i class="material-icons">link</i></a>
+            </div>
+            <div class="card-content">
+            <b>5 dicas para fazer um teste automatizado em Ruby com qualidade, chega de gambiarra!</b>
+              <p>Desde que comecei a trabalhar mais perto dos desenvolvedores aqui da AppProva vejo que eles têm uma preocupação muito grande com a qualidade do código e padrões de projetos. Aqui usamos várias ferramentas que auxiliam a verificar a qualidade do código e também temos um code review muito forte, onde todos do time analisam o código e o desenvolvedor só pode subir sua feature se 1 sênior e mais 3 desenvolvedores aprovem a sua feature, onde são analizados:. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6">
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <%= image_tag("codeship.jpg", :alt => "rss feed") %>
+                <a class="btn-floating halfway-fab waves-light red" href="https://medium.com/automa%C3%A7%C3%A3o-com-batista/aprenda-a-fazer-integra%C3%A7%C3%A3o-cont%C3%ADnua-dos-seus-testes-automatizados-com-capybara-codeship-6463f4e2209e"><i class="material-icons">link</i></a>
+              </div>
+              <div class="card-content">
+                <b>Integração contínua com Codeship</b>
+                <p> Mas primeiro vamos falar o que é a integração contínua?
+                  A integração contínua é uma prática de desenvolvimento 
+                  de software de DevOps em que os desenvolvedores, com frequência,
+                  juntam suas alterações de código em um repositório central.
+                  Depois disso, criações e testes são executados. Geralmente,
+                  a integração contínua se refere ao estágio de criação ou integração
+                  do processo de lançamento de software, além de originar um componente
+                  de automação (ex.: uma CI ou serviço de criação) e um componente
+                  cultural (ex.: aprender a integrar com frequência).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="center">
+        <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

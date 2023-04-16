@@ -1,0 +1,80 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Upload de Arquivos", outros_uploaddearquivos_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="tamanhodiv2">
+        <h5 class="red-text text-darken-1 center">Upload de arquivo</h5>
+      </div>
+    </div>
+
+    <div class="row"> 
+      <form action="#">
+       <div class="file-field input-field">
+         <div class="btn">
+           <span>File</span>
+           <input type="file"  id="upload"multiple>
+         </div>
+         <div class="file-path-wrapper">
+           <input class="file-path validate" id="upload" type="text" placeholder="Upload one or more files">
+         </div>
+       </div>
+     </form>
+    </div>
+
+  </div>
+ 
+  <div class="row"> 
+    <h5 class="red-text text-darken-1 center">Resultado:</h5>
+    <div class="center">
+      <img id="thumbnail" src="#"></img>
+    </div>
+  </div>
+
+</div>
+
+<script>
+$(function () {
+  $(document).on("change", "#upload", function(e) {
+    showThumbnail(this.files);
+  });
+    
+  function showThumbnail(files) {
+    if (files && files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $('#thumbnail').attr('src', e.target.result);
+      }
+      reader.readAsDataURL(files[0]);
+    }
+  }
+});
+</script>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

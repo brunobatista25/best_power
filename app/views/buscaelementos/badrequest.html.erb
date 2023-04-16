@@ -6,31 +6,37 @@
 
   <div class="col s3">
     <%= render "sidenav"%>
-  </div> 
-  
+  </div>   
+
   <div class="col s9">
+
     <div class="row">
       <div class="col s12" style="margin-top: 20px;">
         <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
-        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
-        <%= link_to "Sobre a API", apibatista_sobre_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Bad Request", buscaelementos_badrequest_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
       </div>
     </div>
 
-    <div class="center">
-      <%= image_tag("contatos.png",class: "center img_cinco")%>
+    <div class="row">
+      <div class="tamanhodiv"></div>
+      <h5 class="red-text text-darken-1 center">Bad Request!!</h5>
+    </div>
+  
+    <div class="row">
+       <div class="center">
+         <%= image_tag("spider.jpg",class: "center")%>
+       </div>
     </div>
 
-    <h2 class="center">Api de Tarefas e Contatos</h2>
-
-    <p class="center">Uma Api de tarefas e lista de contatos</p>
-    <p class="center">
-      Documentação da API:
-    <a>https://app.apiary.io/apidetarefas</a>
-    </p>
+    <div class="row">
+      <div class="center">
+       <%= link_to "Voltar", buscaelementos_links_path, :method => "get", class:  "btn waves-light red"%>
+      </div>
+    </div>
 
   </div>
-
+  
 </div>
 
 <!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->

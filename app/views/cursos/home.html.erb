@@ -1,0 +1,81 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>  
+
+  <div class="col s9">
+
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Cursos", cursos_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col s6">
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <%= image_tag("capybaracucumber.jpg", :alt => "rss feed") %>
+              <a class="btn-floating halfway-fab waves-light red" href="https://www.udemy.com/automacao-de-testes-com-capybara-cucumber-e-ruby/" ><i class="material-icons">link</i></a>
+            </div>
+            <div style="margin-top: 10px;">
+              <b >Curso de Automação com Capybara, Cucumber e Ruby.</b>
+              <p>Este curso irá te ensinar a fazer automações em sites utilizando a metodologia:
+                 BDD(Behavior Driven Development  Desenvolvimento Guiado por Comportamento).
+                 Onde usaremos o Cucumber framework e conheceremos os fundamentos do Gherkin.
+                 Iremos conhecer o framework Capybara que ajuda você a testar aplicativos da web, simulando como um usuário real interage com seu aplicativo. 
+                 E iremos usar a linguagem Ruby bem como conhecer e trabalhar com Programação Orientada a Objetos.</p>
+              <p><b>Grade curricular:</b></p>
+              <p><b>Introdução --> Configurando o Ambiente --> Ruby Básico --> Cucumber --> Mapear elementos com CssSelector e Xpath --> Capybara com cucumber --> Page Objects com SitePrism --> Rodando em vários ambientes --> Relatórios --> Projeto Final --> Encerramento</b></p>        
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6">
+        <div class="col s12 m12">
+          <div class="card">
+            <div class="card-image">
+              <%= image_tag("httpartycucumber.jpg", :alt => "rss feed") %>
+              <a class="btn-floating halfway-fab waves-light red" href="" ><i class="material-icons">link</i></a>
+            </div>
+            <div style="margin-top: 10px;">
+              </p><b>>>>>>>>>>>>>SPOILER EM BREVE<<<<<<<<<<<<<</b></p>
+              <b >Curso de Automação de API com Httparty, Cucumber e Ruby.</b>
+              <p>Este curso irá te ensinar a fazer automações em API utilizando a metodologia:
+                 BDD(Behavior Driven Development  Desenvolvimento Guiado por Comportamento).
+                 Onde usaremos o Cucumber framework e conheceremos os fundamentos do Gherkin.
+                 Iremos conhecer o framework Httparty que ajuda você a testar APIS, simulando como as aplicações se comunicam. 
+                 E iremos usar a linguagem Ruby bem como conhecer e trabalhar com Programação Orientada a Objetos.</p>
+              <p><b>Grade curricular:</b></p>
+              <p><b>Introdução --> Configurando o Ambiente --> Ruby Básico --> Cucumber --> API Rest e os verbos HTTP --> Httparty com cucumber --> Rodando em vários ambientes --> Relatórios --> Projeto Final --> Encerramento</b></p>        
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

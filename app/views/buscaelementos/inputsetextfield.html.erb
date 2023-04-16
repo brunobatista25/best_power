@@ -1,0 +1,84 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div>   
+
+  <div class="col s9">
+
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Treinamento", treinamento_home_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Input, TextField e TextArea", buscaelementos_inputsetextfield_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s2"></div>
+        <form class="col s8 center">
+          <h5>Inputs, TextField e TextArea</h5>
+          <div class="tamanhodiv"></div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+          </div>
+    
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+    
+          <div class="row">
+             <div class="input-field col s6">
+               <textarea id="textarea1" class="materialize-textarea"></textarea>
+               <label for="textarea1">Textarea</label>
+             </div>
+          </div>
+          <div class="row">
+            <div class="center">
+             <%= link_to "Voltar", treinamento_home_path, :method => "get", class:  "btn red"%>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="col s2"></div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>

@@ -1,0 +1,61 @@
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<%= render "navbar"%>
+<div class="row">
+
+  <div class="col s3">
+    <%= render "sidenav"%>
+  </div> 
+  
+  <div class="col s9">
+    <div class="row">
+      <div class="col s12" style="margin-top: 20px;">
+        <%= link_to "Home", home_index_path, :method => "get", class: "breadcrumb grey-text text-darken-4" %>
+        <%= link_to "Home Api", api_home_api_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+        <%= link_to "Header", api_o_que_e_header_path, :method => "get", class: "breadcrumb grey-text text-darken-4"%>
+      </div>
+    </div>
+
+    <div class="center">
+      <%= link_to "Voltar", api_o_que_e_metodos_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", api_o_que_e_body_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+
+    <h3>Header</h3>
+    <p>
+      O Header contém uma lista de detalhes sobre <strong>como o cliente quer que a mensagem seja interpretada</strong>.
+      Os diferentes servidores ou APIs podem aceitar diferentes headers.
+    </p>
+    <p>
+      Por exemplo, se você está em um celular e clica em algum link para outro site, como você recebe exatamente o
+      <strong>site em versão mobile</strong>, que se encaixa perfeitamente às dimensões do seu dispositivo?
+    </p>
+    <p>
+      Isso acontece com uma informação específica no header. O servidor recebe essa informação e retorna a versão do
+      site em mobile, aquela que tem design responsivo. Hoje em dia, ter uma versão do site mobile é essencial, ainda mais
+      se você quiser ter uma 
+      <span style="text-decoration: underline;">
+        <a href="http://sensedia.com/blog/negocios-digitais/o-que-e-ser-omnichannel-na-verdade/" target="_blank">presença em diversos canais</a>
+      </span>.
+    </p>
+
+    <div class="center">
+      <%= link_to "Voltar", api_o_que_e_metodos_path, :method => "get", class:  "btn waves-light blue"%>
+      <%= link_to "Próximo", api_o_que_e_body_path, :method => "get", class:  "btn waves-light blue"%>
+    </div>
+  </div>
+
+</div>
+
+<!-- Hotjar Tracking Code for https://automacaocombatista.herokuapp.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:927077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
